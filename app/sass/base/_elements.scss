@@ -1,0 +1,22 @@
+.btn {
+	display: inline-block;
+	text-align: center;
+	padding: 5px 15px;
+	outline: none;
+	@include transition(.3s);
+	cursor: pointer;
+	&_orange {
+		background-color: $orange;
+		&:hover {
+			background-color: darken($orange, 10%);
+		}
+	}
+	&_controls_active {
+		background-color: $orange;
+		border-bottom-color: darken($orange, 10%);
+		&:hover {
+			background-color: darken($orange, 10%);
+			border-bottom-color: $orange;
+		}
+	}
+}

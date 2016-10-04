@@ -1,0 +1,400 @@
+<!-- @@include ../html_open.html -->
+
+<!-- @@include ../header_in.html -->
+
+<!-- open .content-wrap -->
+<main class="page-wrap">
+
+    <!-- @@include ../cabinet-sidebar.html -->
+
+    <!-- open .content-box -->
+    <section class="content">
+
+        <!-- open .content-wrapper -->
+        <div class="content__wrap">
+
+            <section class="share">
+
+                <div class="container">
+
+                        <span class="share__way">
+                        <a href="#" class="share__way--link-first">Оставить заявку</a>/
+                        <a href="#" class="share__way--link-second">Автостраховние</a>
+                        </span>
+
+                    <form action="" class="share__form">
+
+                        <h3 class="share__title">Выберите автомобиль из <span class="notice">гаража:</span></h3>
+
+                        <div class="share__inner">
+
+                            <input class="share__check" type="radio" name="car" id="sportage">
+                            <label for="sportage" class="share__forcheck">
+                                <span class="share__checked">KIA Sportage</span>
+                            </label>
+
+                            <input class="share__check" type="radio" name="car" id="cerato">
+                            <label for="cerato" class="share__forcheck">
+                                <span class="share__checked">Kia Cerato</span>
+                            </label>
+
+                            <input class="share__check" type="radio" name="car" id="optima">
+                            <label for="optima" class="share__forcheck">
+                                <span class="share__checked">Kia Optima</span>
+                            </label>
+
+                            <input class="share__check" type="radio" name="car" id="rio-hatchback">
+                            <label for="rio-hatchback" class="share__forcheck">
+                                <span class="share__checked">Kia Rio-Hatchback</span>
+                            </label>
+
+                        </div>
+
+                        <h3 class="share__title">Выберите тип Вашего транспортного средства:</h3>
+
+                        <div class="share__inner">
+
+                            <input class="share__check" type="radio" name="type" id="car">
+                            <label for="car" class="share__forcheck">
+                                <span class="share__checked">Легковой автомобиль</span>
+                            </label>
+
+                            <input class="share__check" type="radio" name="type" id="freight-car">
+                            <label for="freight-car" class="share__forcheck">
+                                <span class="share__checked">Грузовой автомобиль</span>
+                            </label>
+
+                            <input class="share__check" type="radio" name="type" id="moto">
+                            <label for="moto" class="share__forcheck">
+                                <span class="share__checked">Мотоцикл или скутер</span>
+                            </label>
+
+                        </div>
+
+                        <div class="share__container-select">
+
+                            <label class="share__container-select--field mark" placeholder="Марка">
+
+                                <input type="radio" name="mark">
+                                <div>
+                                    <input type="radio" name="mark" id="1_1">
+                                    <label for="1_1">KIA</label>
+
+                                    <input type="radio" name="mark" id="1_2">
+                                    <label for="1_2">BMW</label>
+
+                                    <input type="radio" name="mark" id="1_3">
+                                    <label for="1_3">Toyota</label>
+
+                                </div>
+                            </label>
+
+                            <label class="share__container-select--field model" placeholder="Модель">
+
+                                <input type="radio" name="model">
+
+                                <div>
+                                    <input type="radio" name="model" id="2_1">
+                                    <label for="2_1">Sportage</label>
+
+                                    <input type="radio" name="model" id="2_2">
+                                    <label for="2_2">Cerato</label>
+
+                                    <input type="radio" name="region" id="2_3">
+                                    <label for="2_3">Kia Optima</label>
+
+                                    <input type="radio" name="model" id="2_4">
+                                    <label for="2_4">Rio-Hatchback</label>
+
+                                </div>
+                            </label>
+
+                            <label class="share__container-select--field year" placeholder="Год выпуска">
+
+                                <input type="radio" name="year">
+
+                                <div>
+                                    <input type="radio" name="year" id="3_1">
+                                    <label for="3_1">2000</label>
+
+                                    <input type="radio" name="year" id="3_2">
+                                    <label for="3_2">2001</label>
+
+                                    <input type="radio" name="year" id="3_3">
+                                    <label for="3_3">2002</label>
+
+                                    <input type="radio" name="year" id="3_4">
+                                    <label for="3_4">2003</label>
+
+                                </div>
+                            </label>
+
+
+                        </div>
+
+                        <div class="share__code">
+
+                            <h3 class="share__title">дата начала эксплуатации:</h3>
+
+                            <input id="date" class="share__code--field" type="text"
+                                   placeholder="Введите дату хх.хх.хххх">
+
+                        </div>
+
+                        <div class="share__code">
+
+                            <h3 class="share__title">количество лошадиных сил</h3>
+
+                            <input id="ph-number" class="share__code--field" type="text"
+                                   placeholder="Введите кол-во л.с.">
+
+                        </div>
+
+                        <div class="share__code">
+
+                            <h3 class="share__title">пробег:</h3>
+
+                            <input id="mileage" class="share__code--field" type="text" placeholder="Введите значение">
+
+                        </div>
+
+                        <div class="share__code">
+
+                            <h3 class="share__title">Страховая сумма:</h3>
+
+                            <input id="sum-insured" class="share__code--field" type="text"
+                                   placeholder="Введите значение">
+
+                        </div>
+
+                        <div class="share__config">
+
+                            <div class="business-options__item--fields">
+
+                                <h3 class="share__title"><span class="notice-small">Автомобиль куплен в кредит?</span>
+                                </h3>
+
+                                <input class="business-options__item--check" type="checkbox" id="8_1">
+                                <label for="8_1" class="business-options__item--forcheck">
+                                    <span class="business-options__item--checked"></span>Да
+                                </label>
+                                <input class="business-options__item--check" type="checkbox" id="8_2">
+                                <label for="8_2" class="business-options__item--forcheck">
+                                    <span class="business-options__item--checked"></span>Нет
+                                </label>
+
+                                <h3 class="share__title"><span class="notice-small">Количество водителей?</span></h3>
+
+                                <input class="business-options__item--check" type="checkbox" id="8_3">
+                                <label for="8_3" class="business-options__item--forcheck">
+                                    <span class="business-options__item--checked"></span>Без ограничений
+                                </label>
+
+                            </div>
+
+                            <div class="business-options__item--fields">
+
+                                <h3 class="share__title">кпп:</h3>
+
+                                <input class="business-options__item--check" type="checkbox" id="10_1">
+                                <label for="10_1" class="business-options__item--forcheck">
+                                    <span class="business-options__item--checked"></span>Механика
+                                </label>
+
+                                <input class="business-options__item--check" type="checkbox" id="10_2">
+                                <label for="10_2" class="business-options__item--forcheck">
+                                    <span class="business-options__item--checked"></span>Автомат
+                                </label>
+
+                                <input class="business-options__item--check" type="checkbox" id="10_3">
+                                <label for="10_3" class="business-options__item--forcheck">
+                                    <span class="business-options__item--checked"></span>Робот
+                                </label>
+
+                                <input class="business-options__item--check" type="checkbox" id="10_4">
+                                <label for="10_4" class="business-options__item--forcheck">
+                                    <span class="business-options__item--checked"></span>Вариатор
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                        <div class="driveInfoWr">
+                            <div class="mileage_sm">
+
+                                <h3 class="share__title">Возраст, лет:</h3>
+
+                                <input class="mileage__next" name="driveInfo[1][year]" placeholder="Введите"
+                                       required="required">
+                            </div>
+
+                            <div class="mileage_sm">
+
+                                <h3 class="share__title">Стаж, лет:</h3>
+
+                                <input class="mileage__next" name="driveInfo[1][stag]" placeholder="Введите"
+                                       required="required">
+                            </div>
+
+                            <div class="mileage_sm">
+
+                                <h3 class="share__title">Или дата рождения:</h3>
+
+                                <input class="mileage__next--sm number" name="driveInfo[1][datarozgd][]"
+                                       placeholder="ДД" required="required">
+                                <input class="mileage__next--sm number" name="driveInfo[1][datarozgd][]"
+                                       placeholder="ММ" required="required">
+                                <input class="mileage__next--sm number" name="driveInfo[1][datarozgd][]"
+                                       placeholder="ГГГГ" required="required">
+                            </div>
+
+                            <div class="mileage_sm">
+
+                                <h3 class="share__title">Или дата получения:</h3>
+
+                                <input class="mileage__next--sm" name="driveInfo[1][datapol][]" placeholder="ДД"
+                                       required="required">
+                                <input class="mileage__next--sm" name="driveInfo[1][datapol][]" placeholder="ММ"
+                                       required="required">
+                                <input class="mileage__next--sm" name="driveInfo[1][datapol][]" placeholder="ГГГГ"
+                                       required="required">
+                            </div>
+
+                            <div class="select_type__driver">
+
+                                <h3 class="share__title">Пол:</h3>
+
+                                <select class="select_type__driver--sel" name="driveInfo[1][pol]" required="required">
+                                    <option value="">Выберите</option>
+                                    <option value="Мужской">Мужской</option>
+                                    <option value="Женский">Женский</option>
+                                </select>
+                            </div>
+
+                            <div class="select_type__driver">
+
+                                <h3 class="share__title">Семейное положение:</h3>
+
+                                <select class="select_type__driver--sel" name="driveInfo[1][pologenie]"
+                                        required="required">
+                                    <option value="">Выберите</option>
+                                    <option value="Женат/Замужем">Женат/Замужем</option>
+                                    <option value="Холост">Холост</option>
+                                </select>
+                            </div>
+
+
+                            <div class="select_type__driver">
+
+                                <h3 class="share__title">Дети:</h3>
+
+                                <select class="select_type__driver--sel" name="driveInfo[1][deti]" required="required">
+                                    <option value="">Выберите</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="более">более</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="save_plus--sm--wr">
+                            <div class="save_plus--sm">
+                            <span class="add_infoDriver">+</span>
+                            </div>
+                            <p class="parag_text_bold addInfoDrive">Добавить водителя</p>
+                        </div>
+
+                        <div class="select_type__driver">
+
+                            <p class="parag_text">Охранная система:</p>
+
+                            <select class="select_type__driver--sel" name="securitySystem">
+                                <option value="">Выберите</option>
+                                <option value="Есть">Есть</option>
+                                <option value="Нет">Нет</option>
+                            </select>
+                        </div>
+
+                        <div class="select_type__driver">
+
+                            <p class="parag_text">Наличие системы автозапуска:</p>
+
+                            <select class="select_type__driver--sel" name="autoloadSystem">
+                                <option value="">Выберите</option>
+                                <option value="Есть">Есть</option>
+                                <option value="Нет">Нет</option>
+                            </select>
+                        </div>
+
+                        <div class="select_type__driver">
+
+                            <p class="parag_text">Иммобилайзер:</p>
+
+                            <select class="select_type__driver--sel" name="imobilaizer">
+                                <option value="">Выберите</option>
+                                <option value="Есть">Есть</option>
+                                <option value="Нет">Нет</option>
+                            </select>
+                        </div>
+
+                        <div class="select_type__driver">
+
+                            <p class="parag_text">Поисково-спутниковая система:</p>
+
+                            <select class="select_type__driver--sel" name="poiskspytniksystem">
+                                <option value="">Выберите</option>
+                                <option value="Есть">Есть</option>
+                                <option value="Нет">Нет</option>
+                            </select>
+                        </div>
+
+                        <div class="select_type__driver">
+
+                            <p class="parag_text">Механические противоугонные устройства:</p>
+
+                            <select class="select_type__driver--sel" name="mexprotivygon">
+                                <option value="">Выберите</option>
+                                <option value="Есть">Есть</option>
+                                <option value="Нет">Нет</option>
+                            </select>
+                        </div>
+
+                        <div class="share__city">
+
+                            <h3 class="share__title">Ваш регион: <span class="notice">Москва</span>. <span
+                                    class="notice-small">Добавить еще один:</span></span></h3>
+
+                            <input type="text" class="share__select" placeholder="Введите название города" required>
+                            <span class="share__arr"></span>
+
+                        </div>
+
+                        <div class="share__comments">
+
+                            <h3 class="share__title">Коментарии:</h3>
+
+                            <textarea class="share__about" name=""
+                                      placeholder="Введите всю дополнительную информацию"></textarea>
+
+                            <input class="btn btn_orange" type="submit" value="Отправит заявку">
+
+                        </div>
+                    </form>
+
+                </div>
+
+            </section>
+
+        </div>
+        <!-- close .content-wrapper -->
+
+        <!-- @@include ../footer.html -->
+
+    </section>
+
+</main>
+<!-- close .content-wrap -->
+
+<!-- @@include ../html_close.html -->

@@ -1,0 +1,134 @@
+.header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	height: 90px;
+	align-items: center;
+	justify-content: space-between;
+	background-color: $base;
+	z-index: 1000;
+	&__logo {
+		float: left;
+		width: 20%;
+		text-align: left;
+		-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+		padding-left: 25px;	
+		img {
+			max-width: 100%;
+		}	
+	}
+	&__location {
+		width: 30%;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		padding: 0 10px;
+		&_field {
+			width: 150px;
+			height: 30px;
+			@include border-radius(15px);
+			background-color: transparent;
+			outline: none;
+			border: 1px solid #fff;
+			color: #FFF;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+			padding: 0 15px;
+		}
+		&_current {
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 10px;
+			svg {
+				width: 19px;
+				height: 25px;
+				fill: #fff;
+				@include transition(.2s);
+			}
+			&:hover {
+				svg {
+					fill: $orange;
+				}
+				
+			}
+		}
+	}
+	&_rightside {
+		float: right;
+		width: 50%;
+		text-align: right;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		padding: 0 30px;
+	}
+	&__registration {
+		display: inline-block;
+		text-align: center;
+		padding: 5px 40px;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		border: none;
+		height: 31px;
+		margin: 0 10px;
+		-webkit-border-radius: 31px;
+		        border-radius: 31px;
+		text: #fff uppercase bold 12px 1.5;
+	}
+	&__request {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 10px;
+		text: #fff uppercase bold 12px;
+		@include transition(.2s);
+		svg {
+			display: inline-block;
+			margin-right: 5px;
+			width: 18px;
+			height: 16px;
+			fill: $orange;
+			vertical-align: bottom;
+		}
+		&:hover {
+			color: $orange;
+		}
+	}
+	&__signin {
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+	    display: inline-block;
+	    position: relative;
+	    vertical-align: middle;
+	    padding: 5px 15px;
+	    margin-left: 10px;
+	    border-left: 1px solid #181818;
+		&:before {
+			content: "";
+			position: absolute;
+			width: 1px;
+			top: 0;
+			left: -2px;
+			bottom: 0;
+			background-color: rgba(255,255,255,.09);
+		}
+		svg {
+			display: inline-block;
+			fill: #fff;
+			width: 27px;
+			height: 21px;
+			@include transition(.2s);
+		}
+		&:hover {
+			svg {
+				fill: $orange;
+			}
+		}
+	}
+}

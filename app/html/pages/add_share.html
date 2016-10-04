@@ -1,0 +1,150 @@
+<!-- @@include ../html_open.html -->
+
+<!-- @@include ../header_in.html -->
+
+<!-- open .content-wrap -->
+<main class="page-wrap">
+
+    <!-- @@include ../cabinet-sidebar.html -->
+
+    <!-- open .content-box -->
+    <section class="content">
+
+        <!-- open .content-wrapper -->
+        <div class="content__wrap">
+
+            <section class="share">
+
+                <div class="container">
+
+                        <span class="share__way">
+                        <a href="#" class="share__way--link-first">Личный кабинет</a>/
+                        <a href="#" class="share__way--link-second">Разместить акцию</a>
+                        </span>
+
+                    <form action="" class="share__form">
+                        <h3 class="share__title">Заголовок:</h3>
+
+                        <input type="text" class="share__select" placeholder="Ввведите заголовок" required>
+                        <span class="share__arr"></span>
+
+                        <div class="share__main">
+
+                            <h3 class="share__title">Добавить фотографии:</h3>
+
+                            <!--<div enctype="multipart/form-data">-->
+                            <!-- <form enctype="multipart/form-data">-->
+                            <input id="file-0a" class="file" type="file" multiple data-min-file-count="1">
+                            <br>
+                            <!-- </form>-->
+                            <!-- </div>-->
+
+
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#conditions" data-toggle="tab">Условия</a></li>
+                                <li><a href="#description" data-toggle="tab">Описание</a></li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <!--conditions block-->
+                                <div class="tab-pane active" id="conditions">
+
+                                    <h3 class="share__title">Срок действия акции:</h3>
+
+                                    <!-- <div class="container">
+                                         <div class="row">
+                                             <div class='col-sm-6'>-->
+                                    <div class="form-group">
+                                        <div class='input-group date' id='date-from'>
+                                            <input type='text' class="form-control" placeholder="С"/>
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                        </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class='input-group date' id='date-to'>
+                                            <input type='text' class="form-control" placeholder="ПО"/>
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                        </span>
+                                        </div>
+                                    </div>
+
+                                    <h3 class="share__title" style="text-transform: none">Выберите сервисы, для которых будет действовать предложение:</h3>
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="2_1">
+                                        <label for="2_1" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>Автомойка
+                                        </label>
+                                        <input class="business-options__item--check" type="checkbox" id="2_2">
+                                        <label for="2_2" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>Автострахование
+                                        </label>
+                                        <input class="business-options__item--check" type="checkbox" id="2_3">
+                                        <label for="2_3" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>Шины
+                                        </label>
+                                    </div>
+
+                                    <h3 class="share__title">Условия:</h3>
+
+                                    <textarea class="share__about" name="" placeholder="Введите всю дополнительную информацию"></textarea>
+
+                                </div>
+                                <!--close conditions block-->
+
+                                <!--description block-->
+                                <div class="tab-pane" id="description">
+
+                                    <h3 class="share__title">Описание:</h3>
+
+                                    <textarea class="share__about" name="" placeholder="Введите всю дополнительную информацию"></textarea>
+
+                                </div>
+                                <!--close description block-->
+                            </div>
+
+                        </div>
+
+                        <div class="share__side">
+
+                            <h3 class="share__title">Старая цена, руб</h3>
+
+                            <input type="text" class="share__price" required>
+
+                            <h3 class="share__title">Новая цена, руб</h3>
+
+                            <input type="text" class="share__price" required>
+
+                            <h3 class="share__title">Скидка, %</h3>
+
+                            <input type="text" class="share__price" required>
+
+                        </div>
+
+
+                        <input class="btn btn_orange" type="submit" value="Сохранить">
+
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </div>
+        <!-- close .content-wrapper -->
+
+        <!-- @@include ../footer.html -->
+
+    </section>
+    <!-- close .content-box -->
+</main>
+<!-- close .content-wrap -->
+
+<!-- @@include ../html_close.html -->

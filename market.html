@@ -1,0 +1,679 @@
+<!-- start html_open.html-->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="format-detection" content="telephone=no">
+    <title>Создать акцию</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/fileinput.css" rel="stylesheet" type="text/css">
+<!--
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
+-->
+    <link href="css/bootstrap-datepicker.css" rel="stylesheet" type="text/css">
+    <link href="css/libs.min.css" rel="stylesheet" type="text/css">
+    <link href="css/flexslider.css" rel="stylesheet" type="text/css">
+    <link href="css/style.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-- open .header -->
+<!-- end html_open.html-->
+
+<!-- start header.html-->
+
+<header class="header">
+    <!-- open .header_leftside -->
+        <!-- open .header__logo -->
+        <div class="header__logo"><a href="/">
+            <img src="img/carbax-logo.png" alt="carbax logo" /></a>
+        </div>
+        <!-- close .header__logo -->
+        <!-- open .header__location -->
+        <div class="header__location">
+            <a href="#nowhere" class="header__location_current">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 434.174 434.174">
+                  <g>
+                    <path d="M217.087 119.397c-24.813 0-45 20.187-45 45s20.187 45 45 45 45-20.187 45-45-20.186-45-45-45z"/>
+                    <path d="M217.087 0c-91.874 0-166.62 74.745-166.62 166.62 0 38.93 13.42 74.78 35.878 103.176l130.742 164.378L347.83 269.796c22.456-28.396 35.877-64.247 35.877-103.177C383.707 74.744 308.96 0 217.087 0zm0 239.397c-41.355 0-75-33.645-75-75s33.645-75 75-75 75 33.645 75 75-33.644 75-75 75z"/>
+                  </g>
+                </svg>
+            </a>
+            <input type="text" class="header__location_field" placeholder="Бронницы" />
+        </div>
+        <!-- close .header__location -->   
+    
+    <!-- open .header_rightside -->
+    <div class="header_rightside">
+        <a href="#" class="header__request">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 489.888 489.888">
+              <path d="M25.383 290.5c-7.2-77.5 25.9-147.7 80.8-192.3 21.4-17.4 53.4-2.5 53.4 25 0 10.1-4.8 19.4-12.6 25.7-38.9 31.7-62.3 81.7-56.6 136.9 7.4 71.9 65 130.1 136.8 138.1 93.7 10.5 173.3-62.9 173.3-154.5 0-48.6-22.5-92.1-57.6-120.6-7.8-6.3-12.5-15.6-12.5-25.6 0-27.2 31.5-42.6 52.7-25.6 50.2 40.5 82.4 102.4 82.4 171.8 0 126.9-107.8 229.2-236.7 219.9-106.6-7.5-193.5-92.4-203.4-198.8zM244.883 0c-18 0-32.5 14.6-32.5 32.5v149.7c0 18 14.6 32.5 32.5 32.5s32.5-14.6 32.5-32.5V32.5c0-17.9-14.5-32.5-32.5-32.5z"/>
+            </svg>
+            ЗАЯВКА НА СЕРВИС
+        </a>
+        <a href="#" class="btn btn_orange header__registration">РЕГИСТАРАЦИЯ</a>
+        <a href="#" class="header__signin">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-41 230.5 512 380.7">
+              <g id="XMLID_2_">
+                <path id="XMLID_4_" d="M391.5 397.6H121.9c-12.9 0-23.3 10.4-23.3 23.3s10.4 23.3 23.3 23.3h269.6l-30.1 30.1c-9.1 9.1-9.1 23.8 0 32.9 9.1 9.1 23.8 9.1 32.9 0l69.8-69.8c.5-.5 1-1.1 1.5-1.7.1-.1.2-.3.3-.4.4-.5.7-.9 1-1.4.1-.1.2-.3.3-.4l.9-1.5c.1-.1.1-.2.2-.3.3-.6.6-1.1.8-1.7 0-.1.1-.2.1-.2.3-.6.5-1.3.7-1.9 0-.1 0-.2.1-.3.2-.6.4-1.3.5-2 0-.2.1-.4.1-.6.1-.5.2-1.1.2-1.7.1-.8.1-1.5.1-2.3s0-1.6-.1-2.3c-.1-.6-.2-1.1-.2-1.7 0-.2-.1-.4-.1-.6-.1-.7-.3-1.3-.5-2 0-.1 0-.2-.1-.2-.2-.7-.4-1.3-.7-1.9 0-.1 0-.1-.1-.2-.2-.6-.5-1.2-.8-1.8-.1-.1-.1-.2-.1-.3l-.9-1.5c-.1-.1-.2-.3-.3-.4-.3-.5-.7-.9-1-1.4-.1-.1-.2-.3-.3-.4-.5-.6-1-1.2-1.5-1.7l-69.8-69.8c-4.5-4.5-10.5-6.8-16.5-6.8s-11.9 2.3-16.5 6.8c-9.1 9.1-9.1 23.8 0 32.9l30.1 29.9z" class="st0"/>
+                <path d="M149.4 611.3c63.5 0 122.6-31.5 158.1-84.3 7.2-10.7 4.3-25.1-6.3-32.3-10.7-7.2-25.1-4.3-32.3 6.3-26.8 39.9-71.5 63.7-119.5 63.7-79.3 0-143.8-64.5-143.8-143.8s64.5-143.8 143.8-143.8c47.9 0 92.4 23.7 119.3 63.4 7.2 10.7 21.7 13.5 32.3 6.3 10.6-7.2 13.5-21.7 6.3-32.3-35.5-52.5-94.5-83.9-157.8-83.9C44.4 230.5-41 315.9-41 420.9s85.4 190.4 190.4 190.4z" class="st0"/>
+              </g>
+            </svg>
+        </a>
+    </div>
+    <!-- close .header_rightside -->
+</header>
+<!-- close .header -->
+<!-- end header.html-->
+
+<!-- open .content-wrap -->
+<main class="page-wrap">
+
+<!-- start sidebar.html-->
+<!-- open .sidebar -->
+<aside class="sidebar">
+	<!-- open .sidebar__list -->
+	<ul class="sidebar__list">
+		<li><a href="#">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250.313 250.313">
+				<path fill="#FFF" fill-rule="evenodd" d="M244.186 214.604l-54.38-54.378c-.288-.29-.627-.49-.93-.76 10.7-16.23 16.946-35.66 16.946-56.554C205.822 46.075 159.747 0 102.912 0S0 46.075 0 102.91c0 56.836 46.074 102.912 102.91 102.912 20.895 0 40.323-6.245 56.554-16.945.27.3.47.64.76.93l54.38 54.38c8.168 8.167 21.412 8.167 29.582 0 8.168-8.17 8.168-21.414 0-29.583zM102.91 170.146c-37.133 0-67.235-30.102-67.235-67.235 0-37.133 30.103-67.235 67.236-67.235s67.236 30.103 67.236 67.236c0 37.134-30.103 67.236-67.235 67.236z" clip-rule="evenodd"/>
+			</svg>
+		Поиск автосервисов</a></li>
+		<li><a href="#">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440.02 440.02">
+			  <g fill="#FFF">
+			    <path d="M327.327 359.86H60V92.533h208.65l60-60H0V419.86h387.327V171.846l-60 60"/>
+			    <path d="M125.735 173.17l-42.427 42.427 101.85 101.85L440.02 62.586 397.593 20.16 185.158 232.594"/>
+			  </g>
+			</svg>
+		Оставить заявку на сервис</a></li>
+		<li><a href="#">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440">
+			  <path fill="#FFF" d="M232.522 242.428c63.913 0 115.91-54.382 115.91-121.227 0-66.83-51.997-121.2-115.91-121.2H120.568v282.428h-29v30h29V440h30V312.428h101.955v-30H150.568v-40h81.954zM150.568 30h81.955c47.37 0 85.91 40.912 85.91 91.2 0 50.304-38.54 91.228-85.91 91.228h-81.955V30z"/>
+			</svg>
+		Продать авто, запчасти</a></li>
+		<li><a href="#">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126.729 126.73">
+			  <path fill="#FFF" d="M121.215 44.212l-34.9-3.3c-2.2-.2-4.1-1.6-5-3.7l-12.5-30.3c-2-5-9.1-5-11.1 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.4c-1.2 5.1 4.3 9.3 8.9 6.6l29.1-17.1c1.9-1.1 4.2-1.1 6.1 0l29.1 17.1c4.6 2.7 10.1-1.4 8.9-6.6l-7.8-32.4c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z"/>
+			</svg>
+		Спецпредложения</a></li>
+	</ul>
+	<!-- close .sidebar__list -->
+	<!-- open .sidebar__middle -->
+	<div class="sidebar__middle">
+		<button class="btn sidebar__registration">Регистрация бизнеса</button>
+	</div>
+	<!-- close .sidebar__middle -->
+	<!-- open .sidebar__list -->
+	<ul class="sidebar__list">
+		<h4>ВАЖНОЕ</h4>
+		<li><a href="#">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330.003 330.003">
+			  <path fill="#006DF0" d="M328.417 208.293l-40-80C285.877 123.21 280.682 120 275 120c-5.682 0-10.875 3.21-13.416 8.293l-44.868 89.735L158.98 69.565c-2.18-5.61-7.503-9.37-13.52-9.557-6.005-.173-11.558 3.243-14.08 8.708L75.402 190H15c-8.284 0-15 6.717-15 15 0 8.285 6.716 15 15 15h70c5.85 0 11.168-3.4 13.62-8.713l45.2-97.934 57.2 147.085c2.15 5.53 7.358 9.273 13.285 9.547.233.01.466.016.7.016 5.658 0 10.863-3.192 13.412-8.29L275 168.54l26.584 53.167c3.705 7.41 12.716 10.413 20.124 6.707 7.41-3.704 10.413-12.714 6.71-20.124z"/>
+			</svg>
+			Рейтинг авто</a></li>
+		<li><a href="#">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330.003 330.003">
+				  <path fill="#50a617" d="M328.417 208.293l-40-80C285.877 123.21 280.682 120 275 120c-5.682 0-10.875 3.21-13.416 8.293l-44.868 89.735L158.98 69.565c-2.18-5.61-7.503-9.37-13.52-9.557-6.005-.173-11.558 3.243-14.08 8.708L75.402 190H15c-8.284 0-15 6.717-15 15 0 8.285 6.716 15 15 15h70c5.85 0 11.168-3.4 13.62-8.713l45.2-97.934 57.2 147.085c2.15 5.53 7.358 9.273 13.285 9.547.233.01.466.016.7.016 5.658 0 10.863-3.192 13.412-8.29L275 168.54l26.584 53.167c3.705 7.41 12.716 10.413 20.124 6.707 7.41-3.704 10.413-12.714 6.71-20.124z"/>
+				</svg>
+			
+		Рейтинг автосервисов</a></li>
+		<li><a href="#">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 486.736 486.736">
+		  			<path fill="#FFF" d="M481.883 61.238l-474.3 171.4c-8.8 3.2-10.3 15-2.6 20.2l70.9 48.4 321.8-169.7-272.4 203.4v82.4c0 5.6 6.3 9 11 5.9l60-39.8 59.1 40.3c5.4 3.7 12.8 2.1 16.3-3.5l214.5-353.7c1.8-2.9-1.1-6.5-4.3-5.3z"/>
+				</svg>
+		Новости</a></li>
+		<li><a href="#">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.58 184.58">
+			  <path fill="#ff004e" d="M182.004 146.234l-73.26-126.89c-3.434-5.948-9.585-9.5-16.454-9.5s-13.02 3.552-16.455 9.5l-73.26 126.89c-3.434 5.948-3.434 13.05 0 19 3.436 5.95 9.587 9.5 16.456 9.5h146.52c6.87 0 13.02-3.552 16.456-9.5 3.434-5.95 3.434-13.052 0-19zm-12.124 12c-.435.75-1.725 2.5-4.33 2.5H19.03c-2.605 0-3.895-1.75-4.33-2.5-.434-.752-1.302-2.744 0-5l73.26-126.89c1.303-2.255 3.462-2.5 4.33-2.5s3.027.245 4.33 2.5l73.26 126.89c1.3 2.256.433 4.248 0 5z"/>
+			</svg>
+			Вопрос / Ответ</a></li>
+	</ul>
+	<!-- close .sidebar__list -->
+</aside>
+<!-- close .sidebar -->
+<!-- end sidebar.html-->
+
+    <!-- open .content-box -->
+    <section class="content">
+
+        <!-- open .content-wrapper -->
+        <div class="content__wrap">
+
+            <!-- open .home-salesearch -->
+            <section class="home-salesearch">
+                <!-- open .container -->
+                <div class="container">
+                    <a href="#" class="home-salesearch__link">
+                        <img src="img/carbax_logo_2.png" alt=""/>
+                        <strong>Продажа авто и запчастей</strong>
+                    </a>
+                    <!-- open .home-salesearch__form -->
+                    <form action="#" class="home-salesearch__form">
+                        <select name="prod_type" class="home-salesearch__form_select">
+                            <option value=""><i>Что ищите?</i></option>
+                            <option value="2">Транспорт</option>
+                            <option value="1">Запчасти</option>
+                            <option value="3">Шины</option>
+                            <option value="4">Диски</option>
+                            <option value="5">Прочее</option>
+                        </select>
+                        <input type="text" name="search" class="home-salesearch__form_inp"
+                               placeholder="Поиск по объявлениям"/>
+                        <select name="region" class="home-salesearch__form_select">
+                            <option value="">Регион</option>
+                            <option value="34">Алтайский край</option>
+                            <option value="54">Амурская область</option>
+                            <option value="50">Архангельская область</option>
+                        </select>
+
+                        <button type="submit" class="home-salesearch__form_find">Найти</button>
+                        <button class="btn_orange home-salesearch__form_map">На карте</button>
+                    </form>
+                    <!-- close .home-salesearch__form -->
+                </div>
+                <!-- close .container -->
+            </section>
+            <!-- close .home-salesearch -->
+
+            <!-- open .market -->
+            <section class="market">
+                <div class="container">
+                    <h1 class="market__title">
+                        Продам HONDA civic type-r
+                    </h1>
+                </div>
+            </section>
+            <!-- close .market -->
+
+            <!-- open .market-pagination -->
+            <section class="market-pagination">
+                <div class="container">
+                    <div class="market-pagination__way">
+                        <a class="market-pagination__way--link" href="#">Все объявления в Москве</a>/
+                        <a class="market-pagination__way--link" href="#">Транспорт</a>/
+                        <a class="market-pagination__way--link" href="#">Автомобили</a>/
+                        <a class="market-pagination__way--link" href="#">Volkswagen</a>
+                        <span class="market-pagination__way--counter">1596</span>
+                    </div>
+
+                    <div class="market-pagination__pages">
+                        <a href="#" class="back">Назад</a>
+                        <a href="#" class="next">Следующее</a>
+                        <a href="#" class="next-arrow"></a>
+                    </div>
+
+                    <div class="market-pagination__box">
+                        <ul class="market-pagination__clases">
+                            <li><a href="#">Запчасти <span class="market-pagination__way--counter">1 536</span></a></li>
+                            <li><a href="#">Аксессуары <span class="market-pagination__way--counter">1 536</span></a>
+                            </li>
+                            <li><a href="#">GPS-навигаторы <span
+                                    class="market-pagination__way--counter">1 536</span></a></li>
+                            <li><a href="#">Автокосметика и автохимия <span class="market-pagination__way--counter">1 536</span></a>
+                            </li>
+                        </ul>
+
+                        <ul class="market-pagination__clases">
+                            <li><a href="#">Аудио- и виделтехника <span
+                                    class="market-pagination__way--counter">1 536</span></a></li>
+                            <li><a href="#">Багажники и фаркопы <span
+                                    class="market-pagination__way--counter">1 536</span></a></li>
+                            <li><a href="#">Инструменты <span class="market-pagination__way--counter">1 536</span></a>
+                            </li>
+                            <li><a href="#">Прицепы <span class="market-pagination__way--counter">1 536</span></a></li>
+                        </ul>
+
+                        <ul class="market-pagination__clases">
+                            <li><a href="#">Противоугонные устройства<span
+                                    class="market-pagination__way--counter">1 536</span></a></li>
+                            <li><a href="#">Тюнинг <span class="market-pagination__way--counter">1 536</span></a></li>
+                            <li><a href="#">Шины, диски и колёса <span
+                                    class="market-pagination__way--counter">1 536</span></a></li>
+                            <li><a href="#">Экипировка <span class="market-pagination__way--counter">1 536</span></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+            <!-- close .market-pagination -->
+
+            <!-- open .market-content -->
+            <div class="market-content">
+                <div class="container">
+                    <!-- open .market-slider -->
+                    <section class="market-slider">
+
+                        <div class="market-slider__box">
+
+                            <div class="market-slider__single">
+                                <ul class="slides">
+                                    <li data-thumb="img/mazda_cx5.png" class="market-slider__single--img">
+                                        <img src="img/mazda_cx5.png"/>
+                                    </li>
+                                    <li data-thumb="img/honda_civic.png" class="market-slider__single--img">
+                                        <img src="img/honda_civic.png"/>
+                                    </li>
+                                    <li data-thumb="img/mazda_cx5.png" class="market-slider__single--img">
+                                        <img src="img/mazda_cx5.png"/>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </section>
+                    <!-- close .market-slider -->
+
+                    <!-- open .marcet-descr -->
+                    <section class="market-descr">
+
+                        <div class="market-descr__box">
+                            <p class="market-descr__box--title">Продается</p>
+
+                            <span class="market-descr__box--field">Легковой автомобиль</span>
+                            <span class="market-descr__box--field">Acura</span>
+                            <span class="market-descr__box--field">1985</span>
+                            <span class="market-descr__box--field">Integra</span>
+                            <span class="market-descr__box--field">1.5 MT (85 л.с.)</span>
+
+                            <p class="market-descr__box--title">Б/у</p>
+                        </div>
+
+                        <span class="market-descr__price">45 000 руб.</span>
+
+                    </section>
+                    <!-- close .marcet-descr -->
+                </div>
+            </div>
+        </div>
+        <!--close .market-content-->
+
+        <!--open .market-reviews-->
+        <section class="market-reviews">
+            <div class="container">
+                <div class="market-reviews__rating">
+                    <span class="market-reviews__title">Рейтинг Carbax</span>
+
+                    <a href="#" class="market-reviews__all">ВСЕ ОТЗЫВЫ</a>
+
+                    <div class="market-reviews__meter">
+                        <img src="img/icons/meter_icon.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="market-reviews__counter">
+                    <span class="market-reviews__counter--shows">Просмотров:</span>
+                    <span class="market-reviews__counter--total">всего 8871, <span
+                            class="market-reviews__counter--today">сегоня 57</span></span>
+                </div>
+
+            </div>
+        </section>
+        <!--close .market-reviews-->
+
+        <!--open .market-extra-->
+        <section class="market-extra">
+            <div class="container">
+
+                <span class="market-extra__title">Дополнительные параметры</span>
+
+                <div class="market-extra__unit">
+                    <span class="market-extra__unit--item">Тип привода:</span>
+                    <span class="market-extra__unit--item">Тип кузова:</span>
+                    <span class="market-extra__unit--item">Тип двигателя:</span>
+                    <span class="market-extra__unit--item">Коробка передач:</span>
+                </div>
+
+                <div class="market-extra__mileage">
+                    <span class="market-extra__mileage--name">Пробег, тыс.км:</span>
+                    <span class="market-extra__mileage--field">Пробег, тыс.км</span>
+                    <span class="market-extra__mileage--name">Объем двигателя, куб.м</span>
+                    <span class="market-extra__mileage--field">Объем двигателя, куб.м</span>
+                    <span class="market-extra__mileage--name">VIN код</span>
+                    <span class="market-extra__mileage--field">VIN код</span>
+                </div>
+
+            </div>
+        </section>
+        <!--close .market-extra-->
+
+        <!--close .market-address-->
+        <section class="market-address">
+            <div class="container">
+                <span class="market-address__title">Адрес: г.Бронницы</span>
+
+                <div class="market-address__map">
+                    <div id="marketMap"></div>
+                </div>
+
+                <div class="market-address__messengers">
+                    <span class="market-address__messengers--name">Александр</span>
+                    <a href="tel:+88009003050" class="market-address__messengers--name">8 800 900 30 50</a>
+                        <span class="market-address__messengers--name">
+                            <a href="#" class="messenger">
+                                <img src="img/icons/whatsapp_icon.png" alt="WhatsApp">
+                                WhatsApp</a>
+                            <a href="#" class="messenger">
+                                 <img src="img/icons/viber_icon.png" alt="Viber">
+                                Viber</a>
+                        </span>
+                </div>
+
+
+            </div>
+        </section>
+        <!--close .market-address-->
+
+        <!--open .market-tabs-->
+        <section class="market-tabs">
+            <div class="container">
+                <!--tabs menu-->
+                <nav class="title__tabs">
+                    <ul>
+                        <li>
+                            <a href="#" class="page__tabs_target active" data-tab="one">
+                                <span>Информация </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="page__tabs_target" data-tab="two">
+                                <span>Комментарии (<span>0</span>)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--close tabs menu-->
+
+                <!--open tabs content-->
+                <div class="market-tabs__box">
+                    <div class="page__tabcontent one">
+                        Продам Suzuki SX4 2010г. В эксплуатации с марта 2011г. МТ, 1,6 (112 л.с.). ПТС оригинал, 2
+                        хозяина.
+                        Экономичный семейный автомобиль.
+                        Хорошее состояние, никаких нареканий. Уместен ТОРГ.
+                    </div>
+                    <div class="page__tabcontent two">
+                        Продам Suzuki SX4 2010г. Продам Suzuki SX4 2010г. Продам Suzuki SX4 2010г. Продам Suzuki SX4
+                        2010г.
+                        Продам Suzuki SX4 2010г.
+                        Продам Suzuki SX4 2010г. Продам Suzuki SX4 2010г.
+                    </div>
+                </div>
+                <!--open tabs content-->
+            </div>
+
+        </section>
+        <!--close .market-tabs-->
+
+        <!--open .market-social-->
+        <section class="market-social">
+            <div class="market-social__share">
+                <a href="#" class="market-social__share--write">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+                        <g>
+                            <g>
+                                <path d="M7,9L5.268,7.484l-4.952,4.245C0.496,11.896,0.739,12,1.007,12h11.986    c0.267,0,0.509-0.104,0.688-0.271L8.732,7.484L7,9z"
+                                />
+                                <path d="M13.684,2.271C13.504,2.103,13.262,2,12.993,2H1.007C0.74,2,0.498,2.104,0.318,2.273L7,8    L13.684,2.271z"
+                                />
+                                <polygon points="0,2.878 0,11.186 4.833,7.079"/>
+                                <polygon points="9.167,7.079 14,11.186 14,2.875"/>
+                            </g>
+                        </g>
+                    </svg>
+                    Написать продавцу</a>
+                <a href="#" class="market-social__share--write">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53.867 53.867">
+                        <polygon points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798
+	                    10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "/>
+                    </svg>
+                    В избранное</a>
+
+
+                <a href="#" class="market-social__share--write">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="m507.641,431.876l-224-384.002c-5.734-9.828-16.258-15.875-27.641-15.875-11.383,0-21.906,6.047-27.641,15.875l-224,384.002c-5.773,9.898-5.813,22.125-0.109,32.063 5.711,9.938 16.289,16.063 27.75,16.063h448.001c11.461,0 22.039-6.125 27.75-16.063 5.703-9.938 5.664-22.165-0.11-32.063zm-251.641-15.878c-17.656,0-32-14.328-32-32 0-17.672 14.344-32 32-32 17.688,0 32,14.328 32,32 0,17.671-14.312,32-32,32zm32-127.998c0,17.672-14.328,32-32,32s-32-14.328-32-32v-96c0-17.672 14.328-32 32-32s32,14.328 32,32v96z"
+                        />
+                    </svg>
+                    Пожаловаться</a>
+            </div>
+
+            <div class="market-social__links">
+                <a href="#" class="market-social__links--vk">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.171 14.171">
+                        <g>
+                            <path d="M13.268,0H0.905C0.405,0,0,0.405,0,0.904v12.363c0,0.499,0.405,0.904,0.905,0.904h12.362   c0.499,0,0.904-0.405,0.904-0.904V0.904C14.172,0.404,13.767,0,13.268,0z M11.755,8.635c0.259,0.264,0.821,0.707,0.719,1.158   c-0.094,0.414-0.712,0.263-1.312,0.287c-0.685,0.029-1.091,0.044-1.503-0.287C9.465,9.636,9.351,9.45,9.165,9.242   C8.996,9.054,8.783,8.717,8.493,8.73C7.972,8.756,8.135,9.482,7.95,9.977c-2.896,0.456-4.059-1.333-5.085-3.069   C2.368,6.067,1.65,4.261,1.65,4.261l2.048-0.007c0,0,0.657,1.195,0.831,1.503c0.148,0.262,0.311,0.47,0.479,0.704   c0.141,0.194,0.364,0.574,0.608,0.543c0.397-0.051,0.469-1.591,0.223-2.107C5.741,4.688,5.506,4.615,5.263,4.544   C5.345,4.026,7.56,3.918,7.918,4.32c0.52,0.584-0.36,2.21,0.352,2.684c1-0.524,1.854-2.718,1.854-2.718l2.398,0.015   c0,0-0.375,1.186-0.768,1.712c-0.229,0.308-0.989,0.994-0.959,1.503C10.819,7.919,11.437,8.311,11.755,8.635z"
+                            />
+                        </g>
+                    </svg>
+                </a>
+                <a href="#" class="market-social__links--fb">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94 94">
+                        <g>
+                            <path d="M89,0H5C2.239,0,0,2.239,0,5v84c0,2.761,2.239,5,5,5h84c2.762,0,5-2.239,5-5V5C94,2.239,91.762,0,89,0z M66.93,21.364   l-7.226,0.003c-5.664,0-6.761,2.692-6.761,6.643v8.711h13.511L66.45,50.365H52.943v35.012H38.852V50.365H27.07V36.721h11.782   V26.659c0-11.677,7.133-18.036,17.548-18.036L66.93,8.64V21.364z"/>
+                        </g>
+                    </svg>
+                </a>
+                <a href="#" class="market-social__links--ok">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94 94">
+                        <g>
+                            <g>
+                                <path d="M47.051,37.59c5.247-0.017,9.426-4.23,9.407-9.489c-0.021-5.259-4.207-9.448-9.456-9.452    c-5.293-0.005-9.52,4.259-9.479,9.566C37.562,33.454,41.788,37.612,47.051,37.59z"
+                                />
+                                <path d="M89,0H5C2.239,0,0,2.238,0,5v84c0,2.762,2.239,5,5,5h84c2.762,0,5-2.238,5-5V5C94,2.238,91.762,0,89,0z M47.08,8.766    c10.699,0.027,19.289,8.781,19.236,19.602c-0.057,10.57-8.787,19.138-19.469,19.102c-10.576-0.036-19.248-8.803-19.188-19.396    C27.722,17.365,36.4,8.734,47.08,8.766z M68.753,55.072c-2.366,2.431-5.214,4.187-8.378,5.416    c-2.991,1.156-6.268,1.742-9.512,2.13c0.49,0.534,0.721,0.793,1.025,1.102c4.404,4.425,8.826,8.832,13.215,13.27    c1.494,1.511,1.81,3.386,0.985,5.145c-0.901,1.925-2.916,3.188-4.894,3.052c-1.252-0.088-2.228-0.711-3.094-1.582    c-3.324-3.345-6.711-6.627-9.965-10.031c-0.947-0.992-1.403-0.807-2.241,0.056c-3.343,3.442-6.738,6.831-10.155,10.2    c-1.535,1.514-3.36,1.785-5.143,0.922c-1.892-0.917-3.094-2.848-3.001-4.791c0.064-1.312,0.71-2.314,1.611-3.214    c4.356-4.351,8.702-8.713,13.05-13.072c0.289-0.288,0.557-0.597,0.976-1.045c-5.929-0.619-11.275-2.077-15.85-5.657    c-0.567-0.445-1.154-0.875-1.674-1.373c-2.002-1.924-2.203-4.125-0.618-6.396c1.354-1.942,3.632-2.464,5.997-1.349    c0.459,0.215,0.895,0.486,1.313,0.775c8.528,5.86,20.245,6.023,28.806,0.266c0.847-0.647,1.754-1.183,2.806-1.449    c2.045-0.525,3.947,0.224,5.045,2.012C70.314,51.496,70.297,53.488,68.753,55.072z"
+                                />
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <a href="#" class="market-social__links--mv">
+                    <img src="img/icons/mai_ru_icon.png" alt="мой мир">
+                </a>
+                <a href="#" class="market-social__links--g">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510">
+                        <g>
+                            <g id="post-gplus">
+                                <path d="M234.6,175.95c0-25.5-15.3-76.5-53.55-76.5c-15.3,0-33.15,10.2-33.15,43.35c0,30.6,15.3,73.95,51,73.95    C198.9,216.75,234.6,214.2,234.6,175.95z M219.3,300.9c-2.55,0-5.1,0-7.65,0l0,0c-7.65,0-30.6,2.55-45.9,7.649    C147.9,313.65,127.5,326.4,127.5,351.9c0,28.05,25.5,56.1,76.5,56.1c38.25,0,61.2-25.5,61.2-51    C265.2,339.15,252.45,326.4,219.3,300.9z M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51    V51C510,22.95,487.05,0,459,0z M181.05,438.6c-71.4,0-104.55-40.8-104.55-76.5c0-12.75,2.55-40.8,38.25-61.199    c20.4-12.75,45.9-20.4,79.05-22.95c-5.1-5.101-7.65-12.75-7.65-25.5c0-5.1,0-7.65,2.55-12.75h-10.2c-51,0-81.6-38.25-81.6-76.5    c0-43.35,33.15-91.8,104.55-91.8h107.1l-7.649,7.65L283.05,96.9l-2.55,2.55h-17.85c10.199,10.2,22.949,28.05,22.949,56.1    c0,35.7-17.85,53.55-40.8,68.85c-5.1,2.55-10.2,10.2-10.2,17.85s5.1,12.75,10.2,15.3c2.55,2.55,7.65,5.101,12.75,7.65    c20.4,15.3,48.45,33.149,48.45,73.95C306,385.05,272.85,438.6,181.05,438.6z M433.5,255h-51v51H357v-51h-51v-25.5h51v-51h25.5v51    h51V255z"
+                                />
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+
+        </section>
+        <!--close .market-social-->
+
+        <!--open .market-same-->
+        <section class="market-same">
+            <div class="container">
+
+                <span class="market-same__title">Похожие объявления:</span>
+
+                <div class="market-same__box">
+                    <a href="#" class="market-same__box--item">
+                        <div class="market-same__box--img">
+                            <img src="img/honda_civic.png" alt="car">
+                        </div>
+                        <div class="market-same__box--content">
+                            <span class="name">Mazda CX-5 | Рестайлинг</span>
+                            <span class="about"><span class="price">1 830 500 Р</span> 2009 г.в., 29 000 км.</span>
+                        </div>
+                    </a>
+                    <a href="#" class="market-same__box--item">
+                        <div class="market-same__box--img">
+                            <img src="img/mazda_cx5.png" alt="car">
+                        </div>
+                        <div class="market-same__box--content">
+                            <span class="name">Mazda CX-5 | Рестайлинг</span>
+                            <span class="about"><span class="price">1 830 500 Р</span> 2009 г.в., 29 000 км.</span>
+                        </div>
+                    </a>
+                    <a href="#" class="market-same__box--item">
+                        <div class="market-same__box--img">
+                            <img src="img/honda_civic.png" alt="car">
+                        </div>
+                        <div class="market-same__box--content">
+                            <span class="name">Mazda CX-5 | Рестайлинг</span>
+                            <span class="about"><span class="price">1 830 500 Р</span> 2009 г.в., 29 000 км.</span>
+                        </div>
+                    </a>
+                    <a href="#" class="market-same__box--item">
+                        <div class="market-same__box--img">
+                            <img src="img/mazda_cx5.png" alt="car">
+                        </div>
+                        <div class="market-same__box--content">
+                            <span class="name">Mazda CX-5 | Рестайлинг</span>
+                            <span class="about"><span class="price">1 830 500 Р</span> 2009 г.в., 29 000 км.</span>
+                        </div>
+                    </a>
+                    <a href="#" class="market-same__box--item">
+                        <div class="market-same__box--img">
+                            <img src="img/honda_civic.png" alt="car">
+                        </div>
+                        <div class="market-same__box--content">
+                            <span class="name">Mazda CX-5 | Рестайлинг</span>
+                            <span class="about"><span class="price">1 830 500 Р</span> 2009 г.в., 29 000 км.</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--close .market-same-->
+
+        <!-- close .content-wrapper -->
+<!-- start footer.html-->
+<!-- @@block  =  footer-->
+<!-- open .footer -->
+<footer class="footer">
+	<!-- open .footer__sitemap -->
+	<div class="footer__sitemap">
+		<ul class="footer__sitemap_list">
+			<li><a href="#">Личный кабинет</a></li>
+			<li><a href="#">Гараж</a></li>
+			<li><a href="#">Заявка</a></li>
+			<li><a href="#">Продать авто</a></li>
+			<li><a href="#">Продать запчасти</a></li>
+			<li><a href="#">Спецпредложения</a></li>
+			<li><a href="#">Блокнот</a></li>
+		</ul>
+		<ul class="footer__sitemap_list">
+			<li><a href="#">Барахолка</a></li>
+			<li><a href="#">Мототехника</a></li>
+			<li><a href="#">Легковые авто</a></li>
+			<li><a href="#">Грузовые авто</a></li>
+			<li><a href="#">Спецтехника</a></li>
+			<li><a href="#">Запчасти</a></li>
+		</ul>
+		<ul class="footer__sitemap_list">
+			<li><a href="#">Запросы</a></li>
+			<li><a href="#">Автошкола</a></li>
+			<li><a href="#">Шиномонтаж</a></li>
+			<li><a href="#">Автосалон</a></li>
+			<li><a href="#">Шины/Диски</a></li>
+			<li><a href="#">Мойка</a></li>
+			<li><a href="#">Тюнинг</a></li>
+			<li><a href="#">Запчасти</a></li>
+		</ul>
+		<ul class="footer__sitemap_list">
+			<li><a href="#">Личный кабинет</a></li>
+			<li><a href="#">Гараж</a></li>
+			<li><a href="#">Заявка</a></li>
+			<li><a href="#">Продать авто</a></li>
+			<li><a href="#">Продать запчасти</a></li>
+			<li><a href="#">Спецпредложения</a></li>
+			<li><a href="#">Блокнот</a></li>
+		</ul>
+		<ul class="footer__sitemap_list">
+			<li><a href="#">Новости</a></li>
+			<li><a href="#">Новинки на рынке</a></li>
+			<li><a href="#">Тюнинг</a></li>
+			<li><a href="#">Спорт</a></li>
+			<li><a href="#">Самостоятельный ремонт</a></li>
+		</ul>
+		<ul class="footer__sitemap_list">
+			<li><a href="#">Автопортал</a></li>
+			<li><a href="#">О нас</a></li>
+			<li><a href="#">Правила сайта</a></li>
+			<li><a href="#">Реклама </a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+		<ul class="footer__sitemap_list">
+			<li><a href="#">Управление бизнесом</a></li>
+            <li><a href="#">Личный кабинет</a></li>
+            <li><a href="#">Мой бизнес</a></li>
+            <li><a href="#">Создать спецпредложение</a></li>
+		</ul>
+		
+	</div>
+	<!-- close .footer__sitemap -->
+	<!-- open .footer__social -->
+	<ul class="footer__social">
+		<li><a href="#">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 548.358 548.358">
+			  <path fill="#FFF" d="M545.45 400.298c-.663-1.43-1.282-2.618-1.857-3.57-9.514-17.134-27.695-38.166-54.532-63.1l-.566-.572-.284-.28-.287-.287h-.288c-12.18-11.612-19.893-19.42-23.123-23.416-5.91-7.614-7.234-15.32-4.004-23.13 2.282-5.9 10.854-18.36 25.696-37.397 7.807-10.09 13.99-18.175 18.556-24.267 32.93-43.78 47.208-71.756 42.828-83.94l-1.7-2.846c-1.144-1.714-4.094-3.282-8.847-4.712-4.763-1.427-10.852-1.663-18.277-.712l-82.224.568c-1.333-.472-3.235-.428-5.713.144-2.475.572-3.713.86-3.713.86l-1.43.714-1.137.86c-.952.567-2 1.566-3.142 2.994-1.137 1.423-2.088 3.093-2.848 4.996-8.952 23.03-19.13 44.444-30.553 64.238-7.043 11.803-13.51 22.032-19.418 30.693-5.9 8.658-10.848 15.037-14.842 19.126-4 4.093-7.61 7.372-10.852 9.85-3.237 2.477-5.708 3.524-7.42 3.14-1.714-.382-3.33-.762-4.858-1.142-2.663-1.713-4.805-4.044-6.42-6.994-1.622-2.95-2.714-6.663-3.285-11.136-.57-4.476-.905-8.326-1-11.563-.09-3.233-.05-7.806.144-13.706.198-5.902.287-9.896.287-11.99 0-7.234.142-15.085.425-23.555.288-8.47.52-15.18.716-20.125.195-4.95.285-10.185.285-15.705s-.336-9.85-1-12.99c-.656-3.14-1.663-6.185-2.99-9.138-1.335-2.95-3.29-5.232-5.853-6.852-2.57-1.618-5.763-2.902-9.564-3.856-10.09-2.284-22.936-3.52-38.547-3.71-35.4-.38-58.147 1.905-68.235 6.854-3.997 2.09-7.614 4.948-10.848 8.562-3.427 4.19-3.905 6.475-1.43 6.85 11.42 1.712 19.507 5.805 24.266 12.276l1.715 3.43c1.334 2.473 2.666 6.853 4 13.133 1.33 6.28 2.19 13.227 2.567 20.837.95 13.897.95 25.793 0 35.69-.953 9.9-1.853 17.606-2.712 23.126-.86 5.52-2.143 9.993-3.855 13.418-1.715 3.426-2.856 5.52-3.428 6.28-.57.76-1.047 1.24-1.425 1.427-2.474.948-5.047 1.43-7.71 1.43-2.667 0-5.9-1.333-9.707-4-3.805-2.665-7.754-6.327-11.847-10.99-4.092-4.666-8.708-11.185-13.85-19.56-5.136-8.373-10.466-18.27-15.986-29.69l-4.567-8.282c-2.855-5.327-6.755-13.085-11.704-23.266-4.952-10.185-9.33-20.037-13.134-29.554-1.522-3.997-3.807-7.04-6.852-9.134l-1.43-.86c-.95-.76-2.474-1.566-4.566-2.426-2.095-.86-4.28-1.475-6.567-1.854l-78.23.568c-7.993 0-13.417 1.81-16.273 5.428l-1.143 1.71c-.572.954-.86 2.476-.86 4.57 0 2.095.57 4.665 1.714 7.708 11.42 26.84 23.84 52.725 37.257 77.66 13.42 24.933 25.08 45.018 34.974 60.236 9.897 15.23 19.985 29.602 30.264 43.112 10.28 13.515 17.083 22.176 20.412 25.98 3.333 3.813 5.95 6.663 7.854 8.566l7.14 6.85c4.567 4.57 11.275 10.042 20.126 16.417 8.853 6.38 18.654 12.66 29.408 18.85 10.756 6.182 23.27 11.226 37.546 15.127 14.275 3.905 28.17 5.472 41.684 4.716h32.834c6.66-.575 11.704-2.67 15.133-6.283l1.136-1.43c.765-1.137 1.48-2.902 2.14-5.277.668-2.38 1-5 1-7.85-.195-8.184.428-15.56 1.852-22.125 1.423-6.564 3.045-11.513 4.86-14.846 1.812-3.33 3.858-6.14 6.135-8.418 2.282-2.283 3.908-3.666 4.862-4.142.947-.48 1.704-.804 2.275-1 4.568-1.52 9.944-.047 16.136 4.43 6.188 4.473 11.99 9.996 17.42 16.56 5.424 6.57 11.942 13.94 19.554 22.124 7.617 8.186 14.277 14.27 19.985 18.274l5.707 3.426c3.812 2.286 8.76 4.38 14.853 6.283 6.08 1.9 11.41 2.377 15.984 1.426l73.087-1.14c7.23 0 12.855-1.197 16.845-3.572 3.998-2.38 6.373-5 7.14-7.85.763-2.855.804-6.093.144-9.713-.678-3.61-1.345-6.135-2.01-7.562z"/>
+			</svg>
+		</a></li>
+		<li><a href="#">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430.113 430.114">
+			  <path fill="#FFF" d="M158.08 83.3v59.218h-43.384v72.412h43.385v215.183h89.123V214.936h59.805s5.6-34.72 8.316-72.685H247.54V92.74c0-7.4 9.717-17.354 19.32-17.354h48.558V0h-66.02c-93.52-.004-91.317 72.48-91.317 83.3z"/>
+			</svg>
+		</a></li>
+		<li><a href="#">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612">
+				  <path fill="#FFF" d="M612 116.258c-22.525 9.98-46.694 16.75-72.088 19.772 25.93-15.527 45.777-40.155 55.184-69.41-24.322 14.378-51.17 24.82-79.775 30.48-22.906-24.438-55.49-39.66-91.63-39.66-69.333 0-125.55 56.218-125.55 125.514 0 9.828 1.11 19.427 3.25 28.606-104.325-5.24-196.834-55.223-258.75-131.174-10.822 18.51-16.98 40.078-16.98 63.1 0 43.56 22.182 81.994 55.836 104.48-20.575-.688-39.926-6.348-56.867-15.756v1.568c0 60.806 43.29 111.554 100.692 123.104-10.517 2.83-21.607 4.398-33.08 4.398-8.107 0-15.947-.803-23.634-2.333 15.985 49.907 62.336 86.2 117.253 87.194-42.946 33.655-97.098 53.656-155.915 53.656-10.134 0-20.116-.612-29.944-1.72 55.568 35.68 121.537 56.484 192.44 56.484 230.947 0 357.187-191.29 357.187-357.188l-.42-16.253C573.87 163.525 595.21 141.42 612 116.257z"/>
+				</svg>
+		</a></li>
+		<li><a href="#">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304.999 304.999">
+			  <g fill="#FFF">
+			    <path d="M160.662 19.47c-18.934 0-37.323 3.668-54.693 10.88L76.352.733c-.82-.82-2.094-.967-3.082-.36C44.437 18.203 19.774 42.866 1.948 71.7c-.61.985-.462 2.26.358 3.08l28.39 28.384c-8.49 18.637-12.808 38.5-12.808 59.074 0 78.72 64.05 142.762 142.775 142.762 78.72 0 142.765-64.043 142.765-142.762 0-78.723-64.044-142.768-142.765-142.768zm56.563 129.194l9.943 42.082 9.543 44.395-44.336-9.532-42.055-9.893L36.71 102.11c14.252-29.337 38.34-52.618 68.114-65.83l112.4 112.384z"/>
+			    <path d="M221.76 187.396l-7.522-33.023c-25.89 11.89-46.404 32.402-58.283 58.295l33.023 7.52c7.01-14.023 18.77-25.778 32.782-32.792z"/>
+			  </g>
+			</svg>
+		</a></li>
+		<li><a href="#">			
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95.481 95.481">
+			  <g fill="#FFF">
+			    <path d="M43.04 67.254c-7.4-.772-14.075-2.595-19.79-7.064-.708-.556-1.44-1.092-2.087-1.713-2.5-2.402-2.753-5.153-.774-7.988 1.692-2.427 4.534-3.076 7.488-1.683.572.27 1.117.607 1.64.97 10.648 7.316 25.277 7.518 35.966.328 1.06-.812 2.19-1.474 3.503-1.812 2.55-.655 4.93.282 6.3 2.514 1.563 2.55 1.543 5.037-.384 7.016-2.956 3.034-6.51 5.23-10.46 6.76-3.736 1.45-7.827 2.178-11.876 2.662.61.665.9.992 1.28 1.376 5.5 5.525 11.02 11.026 16.5 16.567 1.868 1.888 2.258 4.23 1.23 6.425-1.124 2.4-3.64 3.98-6.107 3.81-1.563-.108-2.782-.886-3.865-1.977-4.15-4.175-8.376-8.273-12.44-12.527-1.184-1.237-1.753-1.003-2.797.07-4.174 4.298-8.416 8.53-12.683 12.736-1.916 1.89-4.196 2.23-6.418 1.15-2.362-1.145-3.865-3.556-3.75-5.98.08-1.638.887-2.89 2.012-4.013C30.97 79.45 36.395 74 41.823 68.56c.36-.363.694-.747 1.217-1.306z"/>
+			    <path d="M47.55 48.33c-13.205-.046-24.033-10.993-23.956-24.22C23.67 10.74 34.504-.036 47.84 0c13.362.036 24.087 10.967 24.02 24.478-.068 13.2-10.97 23.897-24.31 23.85zm12-24.187c-.022-6.567-5.252-11.795-11.806-11.8-6.61-.008-11.886 5.315-11.835 11.942.048 6.542 5.323 11.733 11.895 11.71 6.552-.024 11.768-5.286 11.746-11.852z"/>
+			  </g>
+			</svg>
+		</a></li>
+		<li><a href="#">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 491.858 491.858">
+			  <g fill="#FFF">
+			    <path d="M377.472 224.957H201.32v58.718h107.47c-16.032 51.048-63.714 88.077-120.055 88.077-69.492 0-125.823-56.335-125.823-125.824 0-69.492 56.333-125.823 125.823-125.823 34.994 0 66.645 14.29 89.452 37.346l42.622-46.327c-34.04-33.355-80.65-53.93-132.075-53.93C84.5 57.194 0 141.694 0 245.93s84.5 188.737 188.736 188.737c91.307 0 171.248-64.844 188.737-150.99V224.96zM491.858 224.857h-36.03v-36.03H424.94v36.03h-36.03v30.883h36.03v36.032h30.887V255.74h36.03"/>
+			  </g>
+			</svg>
+		</a></li>
+	</ul>
+	<!-- close .footer__social -->
+</footer>
+<!-- close .footer -->
+<!-- @@close-->
+
+<!-- end footer.html-->
+    </section>
+    <!-- close .content-box -->
+</main>
+<!-- close .content-wrap -->
+
+<!-- start html_close.html-->
+</body>
+<script src='https://code.jquery.com/jquery-2.2.2.min.js' type="text/javascript"></script>
+<script src="js/moment-with-locales.min.js" type="text/javascript"></script>
+<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+<script src="js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+<script src="js/fileinput.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+<script src="js/script.min.js" type="text/javascript"></script>
+</html>
+<!-- end html_close.html-->
+

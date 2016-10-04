@@ -1,0 +1,91 @@
+.footer {
+    flex: 1 0 100%;
+	background-color: $base;
+	padding: 45px 15px 45px 0;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	color: #FFF;
+	@include respondTo(tablet) {
+		float: left;
+		width: 100%;
+		position: relative;
+		-webkit-flex-basis: 100%;
+		        flex-basis: 100%;
+	}
+	&__sitemap {
+		float: left;
+		width: 100%;
+		display: flex;
+		-webkit-flex-flow: row wrap;
+		    -ms-flex-flow: row wrap;
+		        flex-flow: row wrap;
+		-webkit-justify-content: space-between;
+		        justify-content: space-between;
+		&_list {
+			padding: 0;
+			margin-right: 25px;
+			float: left;
+			list-style: none;
+			li {
+				a {
+					text: #fff 12px;
+				}
+				&:hover {
+					text-decoration: underline;
+				}
+				&:first-child {
+					margin-bottom: 10px;
+					a {
+						text-decoration: underline;
+						font-size: 14px;
+						&:hover {
+							color: $orange;
+						}
+					}
+				}
+			}
+		}
+	}
+	&__social {
+		float: left;
+		width: 100%;
+		margin: 15px 0;
+		padding: 0;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		text-align: right;
+		li {
+			display: inline-block;
+			margin-right: 5px;
+			a {
+				display: block;
+				position: relative;
+				width: 27px;
+				height: 28px;
+				border: 1px solid rgba(2,1,2,.21);
+				@include border-radius(15px / 15px 15px 15px 15px);
+				background-color: #3f3f3f;
+				@include box-shadow(0 2px 4px rgba(2,1,2,.19), inset 2px 1px 2px rgba(255,255,255,.12));
+				@include background-image(linear-gradient(bottom, rgba(0,0,0,.25) 0%, rgba(0,0,0,0) 100%));
+				@include transition(.2s);
+				svg {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					-webkit-transform: translate(-50%,-50%);
+					   -moz-transform: translate(-50%,-50%);
+					    -ms-transform: translate(-50%,-50%);
+					     -o-transform: translate(-50%,-50%);
+					        transform: translate(-50%,-50%);
+					fill: #fff;
+					max-width: 65%;
+				}
+				&:hover {
+					background-color: #656565;
+				}
+			}
+		}
+	}
+}
