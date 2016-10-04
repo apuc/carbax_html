@@ -348,7 +348,6 @@
     padding: 10px;
   }
 }
-
 .business-options {
   display: block;
   position: relative;
@@ -511,6 +510,9 @@
       width: 100%;
     }
   }
+  &__cars {
+    width: 100%;
+  }
 }
 
 .business-cars {
@@ -532,6 +534,8 @@
     line-height: 21px;
     margin-top: 16px;
     margin-bottom: 16px;
+  }
+  &__content{
   }
   &__type {
     display: flex;
