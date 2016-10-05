@@ -82,7 +82,7 @@ gulp.task('sass', function() { // Создаем таск Sass
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
     browserSync({ // Выполняем browserSync
         proxy: {
-            target: 'loaf_furniture' // Директория для сервера - app
+            target: 'carbax_html' // Директория для сервера - app
         },
         ghostMode: {
             clicks: true,

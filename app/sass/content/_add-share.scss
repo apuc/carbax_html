@@ -1,3 +1,46 @@
+.btn_plus{
+  margin-left: 20px;
+  margin-top:5px;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 35%;
+  border: none;
+  color: #ffffff;
+}
+.fields-contacts{
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  &__form{
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+    width: 33%;
+    float: left;
+    height: 36px;
+    font-family: $calibri;
+    font-size: 16px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #c6c6c6;
+    border-radius: 6px;
+    color: #272727;
+    font-weight: 400;
+    line-height: 36px;
+    padding-left: 17px;
+  }
+}
+.margin_btm{
+  margin-bottom: 45px;
+}
 .share {
   display: block;
   position: relative;
@@ -128,6 +171,7 @@
     padding-left: 17px;
     box-sizing: border-box;
   }
+
   &__price {
     display: block;
     position: relative;
@@ -165,10 +209,10 @@
     z-index: 2;
   }
   &__select:-ms-input-placeholder {
-    color: #c6ccd2;
+    color: #272727;
   }
   &__select::-webkit-input-placeholder {
-    color: #c6ccd2;
+    color: #272727;
   }
   .error {
     border: 1px solid red;

@@ -412,7 +412,7 @@
       width: 18px;
       height: 18px;
       border: none;
-      border-radius: 50%;
+      border-radius: 40%;
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), inset 0 0 0 rgba(255, 255, 255, 0.11);
       float: left;
       background-color: #c6ccd2;
@@ -514,7 +514,9 @@
     width: 100%;
   }
 }
-
+.left{
+  text-align: left;
+}
 .business-cars {
   display: block;
   position: relative;
@@ -534,8 +536,6 @@
     line-height: 21px;
     margin-top: 16px;
     margin-bottom: 16px;
-  }
-  &__content{
   }
   &__type {
     display: flex;
