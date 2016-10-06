@@ -1,7 +1,5 @@
 <!-- @@include ../html_open.html -->
-
 <!-- @@include ../header.html -->
-
 <!-- open .content-wrap -->
 <main class="page-wrap">
 
@@ -156,7 +154,11 @@
                             <h3 class="share__title">Название автосервиса:</h3>
                             <input type="text" class="share__select" placeholder="Ввведите название" required>
                             <h3 class="share__title">адрес автосервиса:</h3>
-                            <input type="text" class="share__select" placeholder="" required>
+                            <input type="text" class="share__select input_width" placeholder="" required>
+                            <button type="submit" class="btn_plus btn_orange big_btn">+</button>
+                            <h3 class="share__title">телефон автосервиса:</h3>
+                            <input type="text" class="share__select input_width" placeholder="" required>
+                            <button type="submit" class="btn_plus btn_orange big_btn">+</button>
                             <div class="business-map__container">
 
                                 <div id="businessMap"></div>
@@ -166,12 +168,9 @@
                             <textarea class="share__about" name=""
                                       placeholder="Введите всю дополнительную информацию"></textarea>
                             <div class="share__main">
-
                                 <h3 class="share__title">Добавить фотографии:</h3>
-
                                 <input id="file-0a" class="file" type="file" multiple data-min-file-count="1">
                                 <br>
-
                             </div>
 
                         </div>
@@ -1362,15 +1361,12 @@
                     </div>
 
                     <div class="container">
-
                         <div class="business-options__comfort">
-
                             <div class="business-options__item">
 
                                 <div class="business-options__item--element">
-                                    <img src="img/icons/wc_icon.png" alt="wc"><span>Туалет</span>
+                                    <span class=""></span><span>Туалет</span>
                                 </div>
-
 
                                 <div class="business-options__item--fields">
                                     <input class="business-options__item--check" type="checkbox" id="1_2">
@@ -1378,7 +1374,6 @@
                                         <span class="business-options__item--checked"></span>
                                     </label>
                                 </div>
-
 
                             </div>
                             <div class="business-options__item">
@@ -1468,7 +1463,6 @@
                                 </div>
 
                             </div>
-
                             <div class="business-options__item">
 
                                 <div class="business-options__item--element">
@@ -1483,7 +1477,6 @@
                                 </div>
 
                             </div>
-
                             <div class="business-options__item">
 
                                 <div class="business-options__item--element">
@@ -1498,7 +1491,6 @@
                                 </div>
 
                             </div>
-
                             <div class="business-options__item">
 
                                 <div class="business-options__item--element">
@@ -1514,7 +1506,6 @@
                                 </div>
 
                             </div>
-
                             <div class="business-options__item">
 
                                 <div class="business-options__item--element">
@@ -1530,7 +1521,6 @@
                                 </div>
 
                             </div>
-
                             <div class="business-options__item">
 
                                 <div class="business-options__item--element">
@@ -1545,9 +1535,7 @@
                                 </div>
 
                             </div>
-
                         </div>
-
                     </div>
 
                     <div class="cabinet__dark">
@@ -1654,7 +1642,7 @@
 
                     </div>
 
-                    <div class="cabinet__dark">
+                    <div class="cabinet__dark margin_btm0">
                         <div class="container">
                             <div class="cabinet__box--head-dark">
                                 <h3 class="cabinet__box--title">Контакты</h3>
@@ -1664,15 +1652,27 @@
                                 <button type="submit" class="btn_plus btn_orange">+</button>
                             </div>
                             <div class="fields-contacts">
-                                <input type="text" class="fields-contacts__form margin_btm" placeholder="Почта" required>
-                                <button type="submit" class="btn_plus btn_orange margin_btm">+</button>
+                                <input type="text" class="fields-contacts__form margin_btm45" placeholder="Почта" required>
+                                <button type="submit" class="btn_plus btn_orange margin_btm45">+</button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="container">
+                    <div class="cabinet__dark margin_btm0" style="background-color: #e4e4e4">
+                        <div class="container">
+                            <div class="fields-save">
+                                <div class="fields-save__forms">
+                                    <input type="text" class="fields-save__forms__saveContent" placeholder="Почта для входа" required>
+                                    <input type="text" class="fields-save__forms__saveContent" placeholder="Почта" required>
+                                </div>
+                                <div class="block-btn-save">
+                                    <button type="submit" class="btn_save btn_orange">Сохранить</button>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
+
                 </section>
 
             </form>

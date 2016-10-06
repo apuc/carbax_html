@@ -41,6 +41,7 @@
     background: none repeat scroll 0 0 transparent;
     cursor: inherit;
     display: block;
+    border-radius: 6px;
 }
 
 .file-caption-name {
