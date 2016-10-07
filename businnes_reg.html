@@ -143,19 +143,14 @@
             <!-- open .business-header -->
             <section class="business-header">
                 <div class="business-categorie">
-						<span class="business-categorie__circle">
-							<img src="img/business.png" alt=""/>
-						</span>
-						<span class="business-categorie__desc">
-							<span class="business-categorie__desc--carbax">CARBAX.RU</span>
-							<span class="business-categorie__desc--title">Для <br/>бизнесса</span>
-						</span>
+                    <p>
+                        <span>carbax</span><span>бизнес - </span>
+                        здесь нужно придумать текст, который будет написан
+                    </p>
                 </div>
 
                 <div class="business-step">
-
-                    <span class="business-step__title"><span>Выберите тип сервиса</span></span>
-
+                    <span>Выберите тип сервиса</span>
                 </div>
             </section>
             <!-- close .business-header -->
@@ -283,15 +278,17 @@
                             <h3 class="share__title">Название автосервиса:</h3>
                             <input type="text" class="share__select" placeholder="Ввведите название" required>
                             <h3 class="share__title">адрес автосервиса:</h3>
-                            <input type="text" class="share__select input_width" placeholder="" required>
-                            <button type="submit" class="btn_plus btn_orange big_btn">+</button>
+                            <div class="input_bntPlus">
+                                <input type="text" class="share__select input_width" placeholder="" required>
+                                <button type="submit" class="btn_orange big_btn">+</button>
+                            </div>
                             <h3 class="share__title">телефон автосервиса:</h3>
-                            <input type="text" class="share__select input_width" placeholder="" required>
-                            <button type="submit" class="btn_plus btn_orange big_btn">+</button>
+                            <div class="input_bntPlus">
+                                <input type="text" class="share__select" placeholder="" required>
+                                <button type="submit" class="btn_orange big_btn">+</button>
+                            </div>
                             <div class="business-map__container">
-
                                 <div id="businessMap"></div>
-
                             </div>
                             <h3 class="share__title">Описание:</h3>
                             <textarea class="share__about" name=""
@@ -325,7 +322,7 @@
 
                     </div>
 
-                    <div class="container">
+                    <div class="container margin_btm25">
 
                         <div class="business-options__time">
 
@@ -633,7 +630,8 @@
                         </div>
 
                     </div>
-                    <div class="container">
+
+                    <div class="container margin_btm25">
 
                         <div class="business-cars__type">
 
@@ -1364,7 +1362,7 @@
 
                         </div>
 
-                        <div class="business-options__credit">
+                        <div class="business-options__credit margin_btm25">
 
                             <div class="business-options__item">
 
@@ -1400,7 +1398,7 @@
 
                         </div>
 
-                        <div class="business-options__credit">
+                        <div class="business-options__credit margin_btm25">
 
                             <div class="business-options__item">
 
@@ -1438,7 +1436,7 @@
 
                         </div>
 
-                        <div class="business-options__credit">
+                        <div class="business-options__credit margin_btm25">
 
                             <div class="business-options__item">
 
@@ -1490,179 +1488,66 @@
                     </div>
 
                     <div class="container">
-                        <div class="business-options__comfort">
-                            <div class="business-options__item">
-
-                                <div class="business-options__item--element">
-                                    <span class=""></span><span>Туалет</span>
+                        <div class="business-options__comfort margin_btm25">
+                            <div class="business-options__item width35">
+                                <div class="business-options__item--element item_comfort">
+                                    <span class="comfort_icons wc-active"></span><span class="comfort_text_active">Туалет</span>
                                 </div>
-
-                                <div class="business-options__item--fields">
-                                    <input class="business-options__item--check" type="checkbox" id="1_2">
-                                    <label for="1_2" class="business-options__item--forcheck">
-                                        <span class="business-options__item--checked"></span>
-                                    </label>
-                                </div>
-
                             </div>
-                            <div class="business-options__item">
-
+                            <div class="business-options__item width35">
                                 <div class="business-options__item--element">
-                                    <img src="img/icons/atm.png" alt="ATM"><span>Банкомат</span>
+                                    <span class="comfort_icons coffe-active"></span><span class="comfort_text_active">Кофе-автомат</span>
                                 </div>
-
-                                <div class="business-options__item--fields">
-                                    <input class="business-options__item--check" type="checkbox" id="2_1">
-                                    <label for="2_1" class="business-options__item--forcheck">
-                                        <span class="business-options__item--checked"></span>
-                                    </label>
-                                </div>
-
-
                             </div>
-                            <div class="business-options__item">
-
+                            <div class="business-options__item width35">
                                 <div class="business-options__item--element">
-                                    <img src="img/icons/wifi_icon.png" alt="wifi"><span>Wi-Fi</span>
+                                    <span class="comfort_icons atm-active"></span><span class="comfort_text_active">Банкомат</span>
                                 </div>
-
-                                <div class="business-options__item--fields">
-                                    <input class="business-options__item--check" type="checkbox" id="3_1">
-                                    <label for="3_1" class="business-options__item--forcheck">
-                                        <span class="business-options__item--checked"></span>
-                                    </label>
-                                </div>
-
-
                             </div>
-                            <div class="business-options__item">
-
+                            <div class="business-options__item width35">
                                 <div class="business-options__item--element">
-                                    <img src="img/icons/cafe_icon.png" alt="cafe"><span>Кафе</span>
+                                    <span class="comfort_icons shop-active"></span><span class="comfort_text_active">Магазин</span>
                                 </div>
-
-                                <div class="business-options__item--fields">
-
-                                    <input class="business-options__item--check" type="checkbox" id="4_1">
-                                    <label for="4_1" class="business-options__item--forcheck">
-                                        <span class="business-options__item--checked"></span>
-                                    </label>
-                                </div>
-
                             </div>
-                            <div class="business-options__item">
-
+                            <div class="business-options__item width35">
                                 <div class="business-options__item--element">
-                                    <img src="img/icons/tire_icon.png" alt="tire"><span>Подкачка шин</span>
+                                    <span class="comfort_icons wifi"></span><span class="comfort_text">Wi-Fi</span>
                                 </div>
-
-                                <div class="business-options__item--fields">
-                                    <input class="business-options__item--check" type="checkbox" id="5_1">
-                                    <label for="5_1" class="business-options__item--forcheck">
-                                        <span class="business-options__item--checked"></span>
-                                    </label>
-                                </div>
-
                             </div>
-                            <div class="business-options__item">
-
+                            <div class="business-options__item width35">
                                 <div class="business-options__item--element">
-                                    <img src="img/icons/postpay.png" alt="postpay"><span>Постоплата</span>
+                                    <span class="comfort_icons cardPay"></span><span class="comfort_text">Оплата картой</span>
                                 </div>
-
-                                <div class="business-options__item--fields">
-                                    <input class="business-options__item--check" type="checkbox" id="6_1">
-                                    <label for="6_1" class="business-options__item--forcheck">
-                                        <span class="business-options__item--checked"></span>
-                                    </label>
-                                </div>
-
                             </div>
-                            <div class="business-options__item">
-
+                            <div class="business-options__item width35">
                                 <div class="business-options__item--element">
-                                    <img src="img/icons/coffeemach_icon.png" alt="coffeemach"><span>Кофе-автомат</span>
+                                    <span class="comfort_icons cafe"></span><span class="comfort_text">Кафе</span>
                                 </div>
-
-                                <div class="business-options__item--fields">
-                                    <input class="business-options__item--check" type="checkbox" id="7_1">
-                                    <label for="7_1" class="business-options__item--forcheck">
-                                        <span class="business-options__item--checked"></span>
-                                    </label>
-                                </div>
-
                             </div>
-                            <div class="business-options__item">
-
+                            <div class="business-options__item width35">
                                 <div class="business-options__item--element">
-                                    <img src="img/icons/basket_icon.png" alt="shop"><span>Магазин</span>
+                                    <span class="comfort_icons parking"></span><span class="comfort_text">Парковка для клиентов</span>
                                 </div>
-
-                                <div class="business-options__item--fields">
-                                    <input class="business-options__item--check" type="checkbox" id="8_1">
-                                    <label for="8_1" class="business-options__item--forcheck">
-                                        <span class="business-options__item--checked"></span>
-                                    </label>
-                                </div>
-
                             </div>
-                            <div class="business-options__item">
-
+                            <div class="business-options__item width35">
                                 <div class="business-options__item--element">
-                                    <img src="img/icons/bankcart_icon.png" alt="bankcart"><span>Оплата картой</span>
+                                    <span class="comfort_icons wheel"></span><span class="comfort_text">Подкачка</span>
                                 </div>
-
-                                <div class="business-options__item--fields">
-                                    <input class="business-options__item--check" type="checkbox" id="9_1">
-                                    <label for="9_1" class="business-options__item--forcheck">
-                                        <span class="business-options__item--checked"></span>
-                                    </label>
-                                </div>
-
                             </div>
-                            <div class="business-options__item">
-
+                            <div class="business-options__item width35">
                                 <div class="business-options__item--element">
-                                    <img src="img/icons/parking_icon.png"
-                                         alt="parking"><span>Парковка для клиентов</span>
+                                    <span class="comfort_icons bank"></span><span class="comfort_text">Терминал оплаты</span>
                                 </div>
-
-                                <div class="business-options__item--fields">
-                                    <input class="business-options__item--check" type="checkbox" id="10_1">
-                                    <label for="10_1" class="business-options__item--forcheck">
-                                        <span class="business-options__item--checked"></span>
-                                    </label>
-                                </div>
-
                             </div>
-                            <div class="business-options__item">
-
+                            <div class="business-options__item width35">
                                 <div class="business-options__item--element">
-                                    <img src="img/icons/payterminal_icon.png"
-                                         alt="payterminal"><span>Терминал оплаты</span>
+                                    <span class="comfort_icons postpay"></span><span class="comfort_text">Постоплата</span>
                                 </div>
-
-                                <div class="business-options__item--fields">
-                                    <input class="business-options__item--check" type="checkbox" id="11_1">
-                                    <label for="11_1" class="business-options__item--forcheck">
-                                        <span class="business-options__item--checked"></span>
-                                    </label>
-                                </div>
-
                             </div>
-                            <div class="business-options__item">
-
+                            <div class="business-options__item width35">
                                 <div class="business-options__item--element">
-                                    <img src="img/icons/hotel_icon.png" alt="hotel"><span>Зона отдыха</span>
-                                </div>
-
-                                <div class="business-options__item--fields">
-                                    <input class="business-options__item--check" type="checkbox" id="12_1">
-                                    <label for="12_1" class="business-options__item--forcheck">
-                                        <span class="business-options__item--checked"></span>
-                                    </label>
-                                </div>
-
+                                    <span class="comfort_icons relax"></span><span class="comfort_text">Зоны отдыха</span>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -1718,7 +1603,7 @@
 
                         </div>
 
-                        <div class="business-options__credit">
+                        <div class="business-options__credit margin_btm25">
 
                             <div class="business-options__item">
 

@@ -1,16 +1,113 @@
+.comfort_text{
+  color:#c6ccd2 !important;
+}
+.comfort_text_active{
+  color: #000000;
+  font-weight: bold;
+}
 .comfort_icons{
   display: inline-block;
   float: left;
   position: relative;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 22px;
-  height: 22px;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  width: 23px;
+  height: 23px;
+  margin-right: 15px;
 }
 .wc {
-  /*background:url("../img/icons/icons-sprites/wc.png");*/
+  background: url("../img/icons/icons-sprites/wc.png");
+  background-position: 0 0;
 }
 .wc-active{
-  /*background:url("../img/icons/icons-sprites/wc.png");
-  background-position: 0px -25px;*/
+  background:url("../img/icons/icons-sprites/wc.png");
+  background-position: 0px -23px;
+}
+.atm{
+  background: url("../img/icons/icons-sprites/atm.png");
+  background-position: 0 0;
+}
+.atm-active{
+  background:url("../img/icons/icons-sprites/atm.png");
+  background-position: 0px -23px;
+}
+.wifi{
+  background: url("../img/icons/icons-sprites/wifi.png");
+  background-position: 0 0;
+}
+.wifi-active{
+  background:url("../img/icons/icons-sprites/wifi.png");
+  background-position: 0px -23px;
+}
+.cafe{
+  background: url("../img/icons/icons-sprites/cafe.png");
+  background-position: 0 0;
+}
+.cafe-active{
+  background:url("../img/icons/icons-sprites/cafe.png");
+  background-position: 0px -23px;
+}
+.wheel{
+  background: url("../img/icons/icons-sprites/truck.png");
+  background-position: 0 0;
+}
+.wheel-active{
+  background:url("../img/icons/icons-sprites/truck.png");
+  background-position: 0px -23px;
+}
+.postpay{
+  background: url("../img/icons/icons-sprites/postpay.png");
+  background-position: 0 0;
+}
+.postpay-active{
+  background:url("../img/icons/icons-sprites/postpay.png");
+  background-position: 0px -23px;
+}
+.coffe{
+  background: url("../img/icons/icons-sprites/coffe.png");
+  background-position: 0 0;
+}
+.coffe-active{
+  background:url("../img/icons/icons-sprites/coffe.png");
+  background-position: 0px -23px;
+}
+.shop{
+  background: url("../img/icons/icons-sprites/shop.png");
+  background-position: 0 0;
+}
+.shop-active{
+  background:url("../img/icons/icons-sprites/shop.png");
+  background-position: 0px -23px;
+}
+.cardPay{
+  background: url("../img/icons/icons-sprites/creditpay.png");
+  background-position: 0 0;
+}
+.cardPay-active{
+  background:url("../img/icons/icons-sprites/creditpay.png");
+  background-position: 0px -23px;
+}
+.parking{
+  background: url("../img/icons/icons-sprites/parking.png");
+  background-position: 0 0;
+}
+.parking-active{
+  background:url("../img/icons/icons-sprites/parking.png");
+  background-position: 0px -23px;
+}
+.bank{
+  background: url("../img/icons/icons-sprites/bank.png");
+  background-position: 0 0;
+}
+.bank-active{
+  background:url("../img/icons/icons-sprites/bank.png");
+  background-position: 0px -23px;
+}
+.relax{
+  background: url("../img/icons/icons-sprites/sleep.png");
+  background-position: 0 0;
+}
+.relax-active{
+  background:url("../img/icons/icons-sprites/sleep.png");
+  background-position: 0px -23px;
 }

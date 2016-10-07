@@ -1,3 +1,6 @@
+.width35{
+  width: 35% !important;
+}
 .business-header {
   display: block;
   position: relative;
@@ -103,81 +106,56 @@
 .business-categorie {
   display: block;
   position: relative;
-  width: 30%;
+  width: 100%;
   float: left;
-  &__circle {
-    display: block;
-    position: relative;
-    width: 93px;
-    height: 93px;
-    float: left;
-    border-radius: 50%;
-    background-color: #ff6b00;
-    margin-left: -7px;
-    margin-right: 7px;
-    img {
-      display: block;
-      position: relative;
-      width: 100px;
-      height: 100px;
-    }
-  }
-  &__desc {
-    display: block;
-    position: relative;
-    width: 70%;
-    float: left;
-    &--carbax {
-      display: block;
-      position: relative;
-      width: 100%;
-      float: left;
-      color: #fb601f;
-      font-family: $calibri;
-      font-weight: bold;
+  background-color: #f96400;
+  font-family: $calibri;
+  font-weight: 100;
+  text-align: left;
+  font-size: 60px;
+  height: 120px;
+  padding: 20px 60px;
+    p{
       text-align: left;
-      font-size: 13px;
-      line-height: 11px;
-      margin-top: 18px;
+      font-size: 28px;
+      font-weight: 200;
+      span{
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      span:first-child{
+        background-color: #FFFFFF;
+        padding: 0 10px;
+        margin-right: 5px;
+      }
     }
-    &--title {
-      display: block;
-      position: relative;
-      width: 100%;
-      float: left;
-      color: white;
-      font-family: $calibri;
-      font-weight: bold;
-      text-align: left;
-      font-size: 19px;
-      line-height: 18px;
-      margin-top: 16px;
-    }
-  }
 }
 
 .business-step {
   display: block;
-  position: relative;
-  width: 70%;
-  float: left;
-  &__title {
-    display: block;
-    position: relative;
-    width: 340px;
-    height: 31px;
-    background-color: #f96400;
-    border-radius: 16px;
-    text-align: center;
-    color: white;
-    font-family: $calibri;
-    font-size: 18px;
-    line-height: 27px;
-    margin: 40px auto;
-    span {
-      color: #272727;
-    }
-  }
+  position: absolute;
+  width: 25%;
+  bottom: 0;
+  left:97px;
+  background-color: #272727;
+  text-align: center;
+  font-style: italic;
+  font-family: $calibri;
+  font-size: 19px;
+  font-weight: 100;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.business-step:after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  height: 1px;
+  opacity: 0.4;
+  background-color: #181818;
+  box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.09);
 }
 
 .business-map {
@@ -387,6 +365,7 @@
     position: relative;
     width: 50%;
     float: left;
+    cursor: pointer;
     &--fields {
       display: block;
       position: relative;
