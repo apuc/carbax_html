@@ -1,0 +1,100 @@
+.bnt-marginBtm{
+  margin-bottom: 30px;
+}
+.sort-cities{
+  line-height: 61px;
+}
+
+.cities {
+  display: block;
+  position: relative;
+  float: left;
+  color: #282828;;
+  font-family: $calibri;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px;
+  text-decoration: none;
+  margin-left: 30px;
+  margin-right: 20px;
+  &--link {
+    color: #272727;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  &--link:hover {
+    color: #f96400;
+    transition: ease-out 300ms;
+  }
+}
+
+/* Выпадающий список сортировки*/
+.delivery_block{
+  width: 16%;
+  padding:  0;
+  font-size: 11px;
+  display: block;
+  float: left;
+  position: relative;
+  margin-top: 23px;
+  line-height: 2.5;
+}
+.delivery_block .delivery_list {
+  padding: 0 9px;
+  height:32px;
+  cursor: pointer;
+  background-color: #cfcece;
+  border-radius: 15px;
+  width: 100%;
+  z-index: 11;
+  color: #282828;
+  font-family: Calibri;
+  font-size: 12px;
+  font-weight: 300;
+}
+.delivery_list #btn {
+  width: 9px;
+  height: 5px;
+  background-image: url("../img/icons/dropdown.png");
+  display: block;
+  float: right;
+  position: absolute;
+  right: 5%;
+  top: 10px;
+  margin-top: 5px;
+  margin-right: 3px;
+}
+.delivery_list span {
+  padding: 2px 0 0 20px;
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  color: #282828;
+  height: 35px;
+  line-height: 28px;
+}
+.delivery_block ul.cities_list {
+  margin-top: 0px;
+  z-index: 10;
+  background-color: #FFFFFF;
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  display: none;
+  border: 1px solid #e8e8e8;
+}
+ul.cities_list li {
+  list-style-type: none;
+  font-size: 14px;
+  position: relative;
+  text-align: left;
+  padding-left: 10px;
+}
+ul.cities_list li:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #e8e8e8;
+}
+.delivery_block .delivery_text {
+  padding: 3px 5px;
+  margin: 5px 0 0 3px;
+}
