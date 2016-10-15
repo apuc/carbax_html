@@ -138,21 +138,19 @@
         <div class="content__wrap">
             <!-- open .home-deals -->
             <section class="home-deals">
-                <!-- open .home-deals__nav -->
-                <nav style="z-index: 11" class="home-deals__nav">
-                    <ul>
-                        <li><a href="#" class="home-deals__nav_item home-deals__nav_item_active">Все</a></li>
-                        <li><a href="#" class="home-deals__nav_item">Автосалон</a></li>
-                        <li><a href="#" class="home-deals__nav_item">Шины / Диски</a></li>
-                        <li><a href="#" class="home-deals__nav_item">Тюнинг</a></li>
-                        <li><a href="#" class="home-deals__nav_item">Автосервис</a></li>
-                        <li><a href="#" class="home-deals__nav_item">Автошкола</a></li>
-                        <li><a href="#" class="home-deals__nav_item">Авторазбор</a></li>
-                        <li><a href="#" class="home-deals__nav_item">Заправка</a></li>
-                        <li><a href="#" class="home-deals__nav_item">Страховка</a></li>
-                    </ul>
-                </nav>
-                <!-- close .home-deals__nav -->
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                    <li class="active menu__item"><a href="#all" data-toggle="tab">Все</a></li>
+                    <li class="menu__item"><a href="#carShowroom" data-toggle="tab">Автосалон</a></li>
+                    <li class="menu__item"><a href="#wheels" data-toggle="tab">Шины / Диски</a></li>
+                    <li class="menu__item"><a href="#tuning" data-toggle="tab">Тюнинг</a></li>
+                    <li class="menu__item"><a href="#carService" data-toggle="tab">Автосервис</a></li>
+                    <li class="menu__item"><a href="#carSchool" data-toggle="tab">Автошкола</a></li>
+                    <li class="menu__item"><a href="#carDetailing" data-toggle="tab">Авторазбор</a></li>
+                    <li class="menu__item"><a href="#GasStation" data-toggle="tab">Заправка</a></li>
+                    <li class="menu__item"><a href="#insurence" data-toggle="tab">Страховка</a></li>
+                </ul>
+                <!-- close Nav tabs -->
 
                 <!-- open .container -->
                 <div class="container sort-cities">
@@ -185,291 +183,1031 @@
                 </div>
                 <!-- close .container -->
 
-                <!-- open .home-deals__content -->
-                <div class="home-deals__content">
-                    <!-- open .container -->
-                    <div class="container">
-                        <div class="deals__item">
-                            <div class="deals__block">
-                                <div class="deals__block-sale">-33%</div>
-                                <div class="deals__block-img">
-                                    <img src="img/mazda_cx5.png" alt="">
-                                    <div class="deals__block-img-more">
-                                        <p>сделаем все</p>
-                                        <a href="#">Подробнее</a>
+                <!-- open tab-content -->
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="all">
+                        <!-- open .container -->
+                        <div class="container">
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="deals__block-desc">
-                                    <p class="deals__title">Скидка на мойку авто</p>
-                                    <div class="deals__block-desc-price">
-                                        <div class="deals__block-desc-price_old">
-                                            <p><strike>120руб.</strike></p>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
                                         </div>
-                                        <div class="deals__block-desc-price_new">
-                                            <p>80руб.</p>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="deals__item">
-                            <div class="deals__block">
-                                <div class="deals__block-sale">-33%</div>
-                                <div class="deals__block-img">
-                                    <img src="img/mazda_cx5.png" alt="">
-                                    <div class="deals__block-img-more">
-                                        <p>сделаем все</p>
-                                        <a href="#">Подробнее</a>
-                                    </div>
-                                </div>
-                                <div class="deals__block-desc">
-                                    <p class="deals__title">Скидка на мойку авто</p>
-                                    <div class="deals__block-desc-price">
-                                        <div class="deals__block-desc-price_old">
-                                            <p><strike>120руб.</strike></p>
-                                        </div>
-                                        <div class="deals__block-desc-price_new">
-                                            <p>80руб.</p>
+                        <!-- close .container -->
+                    </div>
+                    <div class="tab-pane fade" id="carShowroom">
+                        <div class="container">
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="deals__item">
-                            <div class="deals__block">
-                                <div class="deals__block-sale">-33%</div>
-                                <div class="deals__block-img">
-                                    <img src="img/mazda_cx5.png" alt="">
-                                    <div class="deals__block-img-more">
-                                        <p>сделаем все</p>
-                                        <a href="#">Подробнее</a>
-                                    </div>
-                                </div>
-                                <div class="deals__block-desc">
-                                    <p class="deals__title">Скидка на мойку авто</p>
-                                    <div class="deals__block-desc-price">
-                                        <div class="deals__block-desc-price_old">
-                                            <p><strike>120руб.</strike></p>
-                                        </div>
-                                        <div class="deals__block-desc-price_new">
-                                            <p>80руб.</p>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="deals__item">
-                            <div class="deals__block">
-                                <div class="deals__block-sale">-33%</div>
-                                <div class="deals__block-img">
-                                    <img src="img/mazda_cx5.png" alt="">
-                                    <div class="deals__block-img-more">
-                                        <p>сделаем все</p>
-                                        <a href="#">Подробнее</a>
-                                    </div>
-                                </div>
-                                <div class="deals__block-desc">
-                                    <p class="deals__title">Скидка на мойку авто</p>
-                                    <div class="deals__block-desc-price">
-                                        <div class="deals__block-desc-price_old">
-                                            <p><strike>120руб.</strike></p>
-                                        </div>
-                                        <div class="deals__block-desc-price_new">
-                                            <p>80руб.</p>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="deals__item">
-                            <div class="deals__block">
-                                <div class="deals__block-sale">-33%</div>
-                                <div class="deals__block-img">
-                                    <img src="img/mazda_cx5.png" alt="">
-                                    <div class="deals__block-img-more">
-                                        <p>сделаем все</p>
-                                        <a href="#">Подробнее</a>
-                                    </div>
-                                </div>
-                                <div class="deals__block-desc">
-                                    <p class="deals__title">Скидка на мойку авто</p>
-                                    <div class="deals__block-desc-price">
-                                        <div class="deals__block-desc-price_old">
-                                            <p><strike>120руб.</strike></p>
-                                        </div>
-                                        <div class="deals__block-desc-price_new">
-                                            <p>80руб.</p>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="deals__item">
-                            <div class="deals__block">
-                                <div class="deals__block-sale">-33%</div>
-                                <div class="deals__block-img">
-                                    <img src="img/mazda_cx5.png" alt="">
-                                    <div class="deals__block-img-more">
-                                        <p>сделаем все</p>
-                                        <a href="#">Подробнее</a>
-                                    </div>
-                                </div>
-                                <div class="deals__block-desc">
-                                    <p class="deals__title">Скидка на мойку авто</p>
-                                    <div class="deals__block-desc-price">
-                                        <div class="deals__block-desc-price_old">
-                                            <p><strike>120руб.</strike></p>
-                                        </div>
-                                        <div class="deals__block-desc-price_new">
-                                            <p>80руб.</p>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="deals__item">
-                            <div class="deals__block">
-                                <div class="deals__block-sale">-33%</div>
-                                <div class="deals__block-img">
-                                    <img src="img/mazda_cx5.png" alt="">
-                                    <div class="deals__block-img-more">
-                                        <p>сделаем все</p>
-                                        <a href="#">Подробнее</a>
-                                    </div>
-                                </div>
-                                <div class="deals__block-desc">
-                                    <p class="deals__title">Скидка на мойку авто</p>
-                                    <div class="deals__block-desc-price">
-                                        <div class="deals__block-desc-price_old">
-                                            <p><strike>120руб.</strike></p>
-                                        </div>
-                                        <div class="deals__block-desc-price_new">
-                                            <p>80руб.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="deals__item">
-                            <div class="deals__block">
-                                <div class="deals__block-sale">-33%</div>
-                                <div class="deals__block-img">
-                                    <img src="img/mazda_cx5.png" alt="">
-                                    <div class="deals__block-img-more">
-                                        <p>сделаем все</p>
-                                        <a href="#">Подробнее</a>
-                                    </div>
-                                </div>
-                                <div class="deals__block-desc">
-                                    <p class="deals__title">Скидка на мойку авто</p>
-                                    <div class="deals__block-desc-price">
-                                        <div class="deals__block-desc-price_old">
-                                            <p><strike>120руб.</strike></p>
-                                        </div>
-                                        <div class="deals__block-desc-price_new">
-                                            <p>80руб.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="deals__item">
-                            <div class="deals__block">
-                                <div class="deals__block-sale">-33%</div>
-                                <div class="deals__block-img">
-                                    <img src="img/mazda_cx5.png" alt="">
-                                    <div class="deals__block-img-more">
-                                        <p>сделаем все</p>
-                                        <a href="#">Подробнее</a>
-                                    </div>
-                                </div>
-                                <div class="deals__block-desc">
-                                    <p class="deals__title">Скидка на мойку авто</p>
-                                    <div class="deals__block-desc-price">
-                                        <div class="deals__block-desc-price_old">
-                                            <p><strike>120руб.</strike></p>
-                                        </div>
-                                        <div class="deals__block-desc-price_new">
-                                            <p>80руб.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="deals__item">
-                            <div class="deals__block">
-                                <div class="deals__block-sale">-33%</div>
-                                <div class="deals__block-img">
-                                    <img src="img/mazda_cx5.png" alt="">
-                                    <div class="deals__block-img-more">
-                                        <p>сделаем все</p>
-                                        <a href="#">Подробнее</a>
-                                    </div>
-                                </div>
-                                <div class="deals__block-desc">
-                                    <p class="deals__title">Скидка на мойку авто</p>
-                                    <div class="deals__block-desc-price">
-                                        <div class="deals__block-desc-price_old">
-                                            <p><strike>120руб.</strike></p>
-                                        </div>
-                                        <div class="deals__block-desc-price_new">
-                                            <p>80руб.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="deals__item">
-                            <div class="deals__block">
-                                <div class="deals__block-sale">-33%</div>
-                                <div class="deals__block-img">
-                                    <img src="img/mazda_cx5.png" alt="">
-                                    <div class="deals__block-img-more">
-                                        <p>сделаем все</p>
-                                        <a href="#">Подробнее</a>
-                                    </div>
-                                </div>
-                                <div class="deals__block-desc">
-                                    <p class="deals__title">Скидка на мойку авто</p>
-                                    <div class="deals__block-desc-price">
-                                        <div class="deals__block-desc-price_old">
-                                            <p><strike>120руб.</strike></p>
-                                        </div>
-                                        <div class="deals__block-desc-price_new">
-                                            <p>80руб.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="deals__item">
-                            <div class="deals__block">
-                                <div class="deals__block-sale">-33%</div>
-                                <div class="deals__block-img">
-                                    <img src="img/mazda_cx5.png" alt="">
-                                    <div class="deals__block-img-more">
-                                        <p>сделаем все</p>
-                                        <a href="#">Подробнее</a>
-                                    </div>
-                                </div>
-                                <div class="deals__block-desc">
-                                    <p class="deals__title">Скидка на мойку авто</p>
-                                    <div class="deals__block-desc-price">
-                                        <div class="deals__block-desc-price_old">
-                                            <p><strike>120руб.</strike></p>
-                                        </div>
-                                        <div class="deals__block-desc-price_new">
-                                            <p>80руб.</p>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- close .container -->
-
+                    <div class="tab-pane fade" id="wheels">
+                        <div class="container">
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tuning">
+                        <div class="container">
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="carService">
+                        <div class="container">
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="carSchool">
+                        <div class="container">
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="carDetailing">
+                        <div class="container">
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deals__item">
+                                <div class="deals__block">
+                                    <div class="deals__block-sale">-33%</div>
+                                    <div class="deals__block-img">
+                                        <img src="img/mazda_cx5.png" alt="">
+                                        <div class="deals__block-img-more">
+                                            <p>сделаем все</p>
+                                            <a href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="deals__block-desc">
+                                        <p class="deals__title">Скидка на мойку авто</p>
+                                        <div class="deals__block-desc-price">
+                                            <div class="deals__block-desc-price_old">
+                                                <p><strike>120руб.</strike></p>
+                                            </div>
+                                            <div class="deals__block-desc-price_new">
+                                                <p>80руб.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="GasStation"></div>
+                    <div class="tab-pane fade" id="insurence"></div>
                 </div>
-                <!-- close .home-deals__content -->
+                <!-- close tab-content -->
 
                 <!-- open .home-deals__controls -->
                 <div class="home-deals__controls bnt-marginBtm">
