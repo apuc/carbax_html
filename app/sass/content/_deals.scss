@@ -3,8 +3,8 @@
 }
 .sort-cities{
   line-height: 61px;
+  margin-left: 35px;
 }
-
 .cities {
   display: block;
   position: relative;
@@ -27,7 +27,6 @@
     transition: ease-out 300ms;
   }
 }
-
 /* Open Выпадающий список сортировки*/
 .delivery_block{
   width: 16%;
@@ -37,6 +36,7 @@
   float: left;
   position: relative;
   margin-top: 23px;
+  margin-left: 25px;
   line-height: 2.5;
 }
 .delivery_block .delivery_list {
@@ -109,6 +109,22 @@ ul.cities_list li:hover {
       font-family: HelveticaNeueCyr;
     }
 }
+.nav-tabs{
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+  float: left;
+  .menu__item{
+    flex: 1 0 0;
+    position: relative;
+    float: left;
+    a{
+      text-align: center;
+    }
+  }
+}
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   color: white;
   font-family: HelveticaNeueCyr;
@@ -122,3 +138,10 @@ ul.cities_list li:hover {
   border:none;
   margin:0;
 }
+.tab-content{
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
