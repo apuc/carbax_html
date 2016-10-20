@@ -1,0 +1,25 @@
+$cb: 'CalibriBold';
+$cr: 'CalibriRegular';
+
+@font-face {
+  font-family: 'CalibriBold';
+  src: url('../fonts/calibri/calibrib.eot') format('embedded-opentype'),
+
+  url('../fonts/calibri/calibrib.woff') format('woff'),
+  url('../fonts/calibri/calibrib.woff2') format('woff2'),
+  url('../fonts/calibri/calibrib.ttf') format('truetype'),
+  url('../fonts/calibri/calibrib.svg') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'CalibriRegular';
+  src: url('../fonts/calibri/calibriR.eot') format('embedded-opentype'),
+
+  url('../fonts/calibri/calibriR.woff') format('woff'),
+  url('../fonts/calibri/calibriR.woff2') format('woff2'),
+  url('../fonts/calibri/calibriR.ttf') format('truetype'),
+  url('../fonts/calibri/calibriR.svg') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
