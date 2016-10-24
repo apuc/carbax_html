@@ -160,6 +160,7 @@
         }
         .btn3{
           width: 100%;
+          height: 36px;
           display: block;
           float: left;
           position: relative;
@@ -175,7 +176,7 @@
           font-weight: 700;
           line-height: 40px;
           &__left{
-            width: 75%;
+            width: 25%;
             display: block;
             float: left;
             position: relative;
@@ -185,9 +186,12 @@
             background-color: #af4620;
             width: 2px;
             height: 100%;
+            display: block;
+            float: left;
+            position: relative;
           }
           &__rigth{
-            width: 25%;
+            width: 74%;
             display: block;
             float: left;
             position: relative;

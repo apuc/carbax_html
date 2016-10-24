@@ -283,4 +283,5 @@ $(document).ready(function(){
         verticalSwiping: true
 
     });
+
 });
