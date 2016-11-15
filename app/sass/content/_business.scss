@@ -459,10 +459,11 @@
         margin-right: 14px;
       }
       span {
-        color: #383838;
-        font-family: $calibri;
+        color: #1b1b1b;
+        font-family: $cr;
         font-size: 16px;
         line-height: 28px;
+        font-weight: 400;
       }
     }
   }
@@ -532,15 +533,16 @@
       float: left;
       color: #434142;
       font-family: $calibri;
-      font-size: 14px;
+      font-size: 16px;
+      text-align: left;
     }
-    &--icon {
-      display: block;
-      position: relative;
-      width: 170px;
-      height: 96px;
-      margin: 10px auto;
-    }
+    // &--icon {
+    //   display: block;
+    //   position: relative;
+    //   width: 170px;
+    //   height: 96px;
+    //   margin: 10px auto;
+    // }
     &--check {
       display: none;
     }
@@ -552,7 +554,10 @@
       font-family: $calibri;
       font-size: 16px;
       line-height: 10px;
-      margin: 10px auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding-left: 22%;
+      box-sizing: border-box;
     }
     &--check + .business-cars__type--forcheck .business-cars__type--checked {
       display: block;
@@ -742,5 +747,16 @@
     .business-footer__contacts--field{
       margin-right: 70px;
     }
+  }
+}
+.business-cars__type_thumb{
+  height: 55px;
+  width: 130px;
+  position: relative;
+  text-align: center;
+  float: left;
+  img{
+    height: 100%;
+    width: auto;
   }
 }
