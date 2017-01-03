@@ -93,6 +93,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
     });
 });
 
+
 gulp.task('compress', ['clean'], function() {// Создаем таск compress
     return gulp.src('app/js/*.js')// Берем все необходимые библиотеки
         .pipe(plumber())
