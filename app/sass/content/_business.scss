@@ -285,11 +285,34 @@
     box-sizing: border-box;
     width: 100%;
   }
-  .btn-primary{
-    background-color: $orange;
-    border-color: $orange;
-  }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .business-descr {
   display: block;
@@ -761,4 +784,9 @@
     height: 100%;
     width: auto;
   }
+}
+
+.btn-primary{
+  background-color: $orange;
+  border-color: $orange;
 }

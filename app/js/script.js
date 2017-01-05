@@ -285,3 +285,19 @@ $(document).ready(function(){
     });
 
 });
+
+$(document).ready(function(){
+    $('.btn-category').click(function(){
+        $(".categories").slideDown("slow",function() {
+        });
+        return false;
+    });
+
+    $('.close-category').click(function () {
+        $(".categories").slideUp("slow",function() {
+        });
+        return false;
+    });
+});
+
+
