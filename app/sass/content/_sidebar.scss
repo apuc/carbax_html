@@ -4,6 +4,7 @@
 	left: 0;
 	bottom: 0;
 	padding-top: 90px;
+    overflow-y: scroll;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
@@ -84,4 +85,9 @@
 			color: $base;
 		}
 	}
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
 }
