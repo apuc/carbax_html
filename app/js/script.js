@@ -300,4 +300,17 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function () {
 
+    // Свернуть/развернуть блок запроса
+    $('.req-id').click(function () {
+        $(this).next('.request__toggle-block').slideToggle("slow", function () {
+            if($(this).is(":visible")){
+                $('.btn-id').html('Свернуть' + '<span class="up">' + '</span>');
+            }else{
+                $('.btn-id').html('Развернуть' + '<span class="down">' + '</span>');
+            }
+       });
+       return false;
+    });
+});
