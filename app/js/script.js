@@ -1,5 +1,19 @@
 $(document).ready(function () {
 
+    // Свернуть/развернуть блок запроса
+    $('.request__header').click(function() {
+        $(this).next('.request__toggle-block').slideToggle('slow',function () {
+            if($(this).children().hasClass('rotated')){
+                $(this).parent('.request').find('.arrow').removeClass('rotated');
+            }
+            else{
+                $(this).parent('.request').find('.arrow').addClass('rotated');
+            }
+        });
+        return false;
+    });
+
+
     /*slider for market single proposal*/
     $(window).load(function () {
         $('.market-slider__single').flexslider({
@@ -297,20 +311,5 @@ $(document).ready(function(){
         $(".categories").slideUp("slow",function() {
         });
         return false;
-    });
-});
-
-$(document).ready(function () {
-
-    // Свернуть/развернуть блок запроса
-    $('.req-id').click(function () {
-        $(this).next('.request__toggle-block').slideToggle("slow", function () {
-            if($(this).is(":visible")){
-                $('.btn-id').html('Свернуть' + '<span class="up">' + '</span>');
-            }else{
-                $('.btn-id').html('Развернуть' + '<span class="down">' + '</span>');
-            }
-       });
-       return false;
     });
 });

@@ -1,3 +1,4 @@
+
 .request{
   display: block;
   position: relative;
@@ -43,21 +44,12 @@
       font-family: $cr;
       cursor: pointer;
       font-style: italic;
-      .down{
+      .arrow{
         display: inline-block;
         margin-left: 10px;
         width: 18px;
         height: 15px;
         background-image: url(../img/icons/down.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
-      .up{
-        display: inline-block;
-        margin-left: 10px;
-        width: 18px;
-        height: 15px;
-        background-image: url(../img/icons/up.png);
         background-size: cover;
         background-repeat: no-repeat;
       }
@@ -136,4 +128,12 @@
       }
     }
   }
+}
+
+.rotated {
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -moz-transform: rotate(180deg); /* Firefox */
+  -webkit-transform: rotate(180deg); /* Safari and Chrome */
+  -o-transform: rotate(180deg); /* Opera */
 }
