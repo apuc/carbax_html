@@ -1,5 +1,14 @@
 $(document).ready(function () {
 
+    /*$('.btn-filtr').click(function(){
+        $(".search-filters").slideToggle('fast');
+        return false;
+    });*/
+    $('.btn-filtr').click(function() {
+        $('.search-filters').animate({width: 'toggle'});
+    });
+
+
     // Свернуть/развернуть блок запроса
     $('.request__header').click(function() {
         $(this).next('.request__toggle-block').slideToggle('slow',function () {
@@ -339,5 +348,7 @@ $(document).ready(function(){
         verticalSwiping: true
 
     });
+
+
 
 });
