@@ -13,6 +13,28 @@ $(document).ready(function () {
         return false;
     });
 
+    $(document).ready(function() {
+        $('#go').click( function(event){
+            event.preventDefault();
+            $('#overlay').fadeIn(400,
+                function(){
+                    $('#modal_form')
+                        .css('display', 'block')
+                        .animate({opacity: 1, top: '50%'}, 200);
+                });
+        });
+        /* Зaкрытие мoдaльнoгo oкнa, тут делaем тo же сaмoе нo в oбрaтнoм пoрядке */
+        $('.close-category, #overlay').click( function(){
+            $('#modal_form')
+                .animate({opacity: 0, top: '45%'}, 200,
+                    function(){
+                        $(this).css('display', 'none');
+                        $('#overlay').fadeOut(400);
+                    }
+                );
+        });
+    });
+
 
     /*slider for market single proposal*/
     $(window).load(function () {
@@ -82,6 +104,26 @@ $(document).ready(function () {
         });
     };
     /*close rating map*/
+
+    /*search-map*/
+    if ($('#search-map').length > 0) {//проверяет наличие блока на странице
+        ymaps.ready(function () {
+            var myMap = new ymaps.Map('search-map', {
+                center: [55.75396, 37.620393],
+                zoom: 10
+            });
+            /*myMap.controls.add('smallZoomControl');
+             myMap.controls.add('searchControl');*/
+            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                hintContent: myajax.img + 'img/marker.png',
+                balloonContent: 'Это красивая метка'
+            }, {});
+
+            myMap.geoObjects.add(myPlacemark);
+        });
+    };
+    /*close search-map*/
+
 
     /*market tabs*/
     $('.page__tabs_target').click(function (event) {
@@ -298,18 +340,4 @@ $(document).ready(function(){
 
     });
 
-});
-
-$(document).ready(function(){
-    $('.btn-category').click(function(){
-        $(".categories").slideDown("slow",function() {
-        });
-        return false;
-    });
-
-    $('.close-category').click(function () {
-        $(".categories").slideUp("slow",function() {
-        });
-        return false;
-    });
 });
