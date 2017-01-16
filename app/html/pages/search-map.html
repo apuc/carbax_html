@@ -1,0 +1,611 @@
+<!-- @@include ../html_open.html -->
+<!-- @@include ../header.html -->
+<!-- open .content-wrap -->
+<main class="page-wrap">
+
+    <!-- @@include ../sidebar.html -->
+
+    <!-- open .content-box -->
+    <section class="content">
+        <!-- open .content-wrapper -->
+        <div class="content__wrap">
+            <div class="map">
+                <div id="search-map"></div>
+                <div class="map__search">
+                    <div class="head">
+                        <span>C</span>
+                        <input type="text" id="search" placeholder="Поиск автосервиса">
+                        <button class="btn-search"><span></span></button>
+                    </div>
+                    <div class="search-descr">
+                        <div class="search-descr__head">
+                            <h2 class="count">100500 организаций</h2>
+                        </div>
+                        <div class="search-descr__settings">
+                            <div class="search-descr__settings--check">
+                                <input class="business-options__item--check" type="checkbox" id="rat" required>
+                                <label for="rat" class="business-options__item--forcheck" style="font-weight: 500;">
+                                    <span class="business-options__item--checked" ></span>Рейтинг
+                                </label>
+                                <input class="business-options__item--check" type="checkbox" id="onmap" required>
+                                <label for="onmap" class="business-options__item--forcheck" style="font-weight: 500;">
+                                    <span class="business-options__item--checked" ></span> На карте
+                                </label>
+                            </div>
+                            <a href="#" class="btn-filtr">
+                                <span></span>Фильтры
+                            </a>
+                        </div>
+                        <div class="search-descr__icons">
+                            <a href="" class="icon">
+                                <img src="img/icons/filters/razbor.png" alt="">
+                                <p>Авторазбор</p>
+                            </a>
+                            <a href="" class="icon">
+                                <img src="img/icons/filters/shop.png" alt="">
+                                <p>Автомагазин</p>
+                            </a>
+                            <a href="" class="icon">
+                                <img src="img/icons/filters/sto.png" alt="">
+                                <p>Автосервис</p>
+                            </a>
+                            <a href="" class="icon">
+                                <img src="img/icons/filters/moyka.png" alt="">
+                                <p>Автомойка</p>
+                            </a>
+                            <a href="" class="icon">
+                                <img src="img/icons/filters/azc.png" alt="">
+                                <p>Заправка</p>
+                            </a>
+                            <a href="" class="icon">
+                                <img src="img/icons/filters/polis.png" alt="">
+                                <p>Страхование</p>
+                            </a>
+                            <a href="" class="icon">
+                                <img src="img/icons/filters/school.png" alt="">
+                                <p>Автошкола</p>
+                            </a>
+                            <a href="" class="icon">
+                                <img src="img/icons/filters/tuning.png" alt="">
+                                <p>Тюниинг</p>
+                            </a>
+                            <a href="" class="icon">
+                                <img src="img/icons/filters/evacuator.png" alt="">
+                                <p>Эвакуатор</p>
+                            </a>
+                            <a href="" class="icon">
+                                <img src="img/icons/filters/shina.png" alt="">
+                                <p>Шины/диски</p>
+                            </a>
+                            <a href="" class="icon">
+                                <img src="img/icons/filters/montag.png" alt="">
+                                <p>Шиномонтаж</p>
+                            </a>
+                            <a href="" class="icon">
+                                <img src="img/icons/filters/salon.png" alt="">
+                                <p>Автосалон</p>
+                            </a>
+                        </div>
+                        <div class="search-descr__results">
+                            <div class="result">
+                                <h3>Оптиум Авто</h3>
+                                <div class="logo"><img src="img/1.png" alt="logo"></div>
+                                <span>Автосервисы, тюнинг</span>
+                                <p class="content-map">Автотехцентр Оптимум Авто предоставляет высокопрофессиональное обслуживание автомобилей разных марок в кратчайшие сроки по умеренным ценам.</p>
+                                <p class="address-map">м.Щёгловская, Щегловское шоссе, 100к106,<a href="">3 филиала</a></p>
+                            </div>
+                            <div class="result">
+                                <h3>Оптиум Авто</h3>
+                                <div class="logo"><img src="img/1.png" alt="logo"></div>
+                                <span>Автосервисы, тюнинг</span>
+                                <p class="content-map">Автотехцентр Оптимум Авто предоставляет высокопрофессиональное обслуживание автомобилей разных марок в кратчайшие сроки по умеренным ценам.</p>
+                                <p class="address-map">м.Щёгловская, Щегловское шоссе, 100к106,<a href="">3 филиала</a></p>
+                            </div>
+                            <div class="result">
+                                <h3>Оптиум Авто</h3>
+                                <div class="logo"><img src="img/1.png" alt="logo"></div>
+                                <span>Автосервисы, тюнинг</span>
+                                <p class="content-map">Автотехцентр Оптимум Авто предоставляет высокопрофессиональное обслуживание автомобилей разных марок в кратчайшие сроки по умеренным ценам.</p>
+                                <p class="address-map">м.Щёгловская, Щегловское шоссе, 100к106,<a href="">3 филиала</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-filters">
+                        <!--<div class="back"><span id="back">< свернуть</span></div>-->
+                        <div class="type-car">
+                            <h3>Работает с</h3>
+                            <div class="business-cars__type">
+                                <span class="business-cars__type--head">С грузовыми авто</span>
+                                <img class="business-cars__type--icon" src="img/icons/truck_icon.png" alt="truck">
+                                <input class="business-cars__type--check" type="checkbox" id="1">
+                                <label class="business-cars__type--forcheck" for="1">
+                                    <span class="business-cars__type--checked"></span>
+                                </label>
+                            </div>
+                            <div class="business-cars__type">
+                                <span class="business-cars__type--head">С легковыми авто</span>
+                                <img class="business-cars__type--icon" src="img/icons/car_icon.png" alt="car">
+                                <input class="business-cars__type--check" type="checkbox" id="2">
+                                <label class="business-cars__type--forcheck" for="2">
+                                    <span class="business-cars__type--checked"></span>
+                                </label>
+                            </div>
+                            <div class="business-cars__type">
+                                <span class="business-cars__type--head">С мототехникой</span>
+                                <img class="business-cars__type--icon" src="img/icons/moto_icon.png" alt="moto">
+                                <input class="business-cars__type--check" type="checkbox" id="3">
+                                <label class="business-cars__type--forcheck" for="3">
+                                    <span class="business-cars__type--checked"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="model-car">
+                            <h3>Марка автомобиля</h3>
+                            <div class="business-options__services business-options__cars">
+                                <div class="business-options__item">
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="1_1">
+                                        <label for="1_1" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element left">
+                                        <span>Audi</span>
+                                    </div>
+
+
+                                </div>
+                                <div class="business-options__item">
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="1_2">
+                                        <label for="1_2" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element left">
+                                        <span>BMW</span>
+                                    </div>
+
+                                </div>
+                                <div class="business-options__item">
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="1_3">
+                                        <label for="1_3" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element left">
+                                        <span>BMW</span>
+                                    </div>
+
+                                </div>
+                                <div class="business-options__item">
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="1_4">
+                                        <label for="1_4" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element left">
+                                        <span>BMW</span>
+                                    </div>
+
+                                </div>
+                                <div class="business-options__item">
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="1_5">
+                                        <label for="1_5" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element left">
+                                        <span>BMW</span>
+                                    </div>
+
+                                </div>
+                                <div class="business-options__item">
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="1_6">
+                                        <label for="1_6" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element left">
+                                        <span>BMW</span>
+                                    </div>
+
+                                </div>
+                                <div class="business-options__item">
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="1_7">
+                                        <label for="1_7" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element left">
+                                        <span>BMW</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="business-options__services business-options__cars">
+                                <div class="business-options__item">
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="2_1">
+                                        <label for="2_1" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element left">
+                                        <span>Audi</span>
+                                    </div>
+
+
+                                </div>
+                                <div class="business-options__item">
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="2_2">
+                                        <label for="2_2" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element left">
+                                        <span>BMW</span>
+                                    </div>
+
+                                </div>
+                                <div class="business-options__item">
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="2_3">
+                                        <label for="2_3" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element left">
+                                        <span>BMW</span>
+                                    </div>
+
+                                </div>
+                                <div class="business-options__item">
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="2_4">
+                                        <label for="2_4" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element left">
+                                        <span>BMW</span>
+                                    </div>
+
+                                </div>
+                                <div class="business-options__item">
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="2_5">
+                                        <label for="2_5" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element left">
+                                        <span>BMW</span>
+                                    </div>
+
+                                </div>
+                                <div class="business-options__item">
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="2_6">
+                                        <label for="2_6" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element left">
+                                        <span>BMW</span>
+                                    </div>
+
+                                </div>
+                                <div class="business-options__item">
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="2_7">
+                                        <label for="2_7" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element left">
+                                        <span>BMW</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="business-options__services business-options__cars">
+                                <div class="business-options__item">
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="3_1">
+                                        <label for="3_1" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element left">
+                                        <span>Audi</span>
+                                    </div>
+
+
+                                </div>
+                                <div class="business-options__item">
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="3_2">
+                                        <label for="3_2" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element left">
+                                        <span>BMW</span>
+                                    </div>
+
+                                </div>
+                                <div class="business-options__item">
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="3_3">
+                                        <label for="3_3" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element left">
+                                        <span>BMW</span>
+                                    </div>
+
+                                </div>
+                                <div class="business-options__item">
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="3_4">
+                                        <label for="3_4" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element left">
+                                        <span>BMW</span>
+                                    </div>
+
+                                </div>
+                                <div class="business-options__item">
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="3_5">
+                                        <label for="3_5" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element left">
+                                        <span>BMW</span>
+                                    </div>
+
+                                </div>
+                                <div class="business-options__item">
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="3_6">
+                                        <label for="3_6" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element left">
+                                        <span>BMW</span>
+                                    </div>
+
+                                </div>
+                                <div class="business-options__item">
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="3_7">
+                                        <label for="3_7" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element left">
+                                        <span>BMW</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services">
+                            <h3>Вид работ</h3>
+                            <div class="business-options__services">
+                                <div class="business-options__item">
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="22_1">
+                                        <label for="22_1" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element">
+                                        <span>Диагностика кондиционера</span>
+                                    </div>
+
+
+                                </div>
+                                <div class="business-options__item">
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="22_2">
+                                        <label for="22_2" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element">
+                                        <span>Сход/развал</span>
+                                    </div>
+
+                                </div>
+                                <div class="business-options__item">
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="22_3">
+                                        <label for="22_3" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element">
+                                        <span>Техническое обслуживание</span>
+                                    </div>
+
+                                </div>
+                                <div class="business-options__item">
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="22_4">
+                                        <label for="22_4" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element">
+                                        <span>Замена масла</span>
+                                    </div>
+
+                                </div>
+                                <div class="business-options__item">
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="22_5">
+                                        <label for="22_5" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element">
+                                        <span>Слесарные работы</span>
+                                    </div>
+
+                                </div>
+                                <div class="business-options__item">
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="22_6">
+                                        <label for="22_6" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element">
+                                        <span>Кузовные работы</span>
+                                    </div>
+
+                                </div>
+                                <div class="business-options__item">
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="22_7">
+                                        <label for="22_7" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element">
+                                        <span>Обслуживание кондиционера</span>
+                                    </div>
+
+                                </div>
+                                <div class="business-options__item">
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="22_8">
+                                        <label for="22_8" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element">
+                                        <span>Ремонт выхлопной системы</span>
+                                    </div>
+
+                                </div>
+                                <div class="business-options__item">
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="22_9">
+                                        <label for="22_9" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element">
+                                        <span>Ремонт двигателя</span>
+                                    </div>
+
+                                </div>
+                                <div class="business-options__item">
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="22_10">
+                                        <label for="22_10" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element">
+                                        <span>Ремонт кондиционеров</span>
+                                    </div>
+
+                                </div>
+                                <div class="business-options__item">
+
+                                    <div class="business-options__item--fields">
+                                        <input class="business-options__item--check" type="checkbox" id="22_11">
+                                        <label for="22_11" class="business-options__item--forcheck">
+                                            <span class="business-options__item--checked"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="business-options__item--element">
+                                        <span>Ремонт и диагностика АКПП</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- @@include ../footer.html -->
+    </section>
+    <!-- close ..content-box -->
+</main>
+<!-- close .content-wrap -->
+<!-- @@include ../html_close.html -->
