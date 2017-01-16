@@ -109,39 +109,5 @@ ul.cities_list li:hover {
       font-family: HelveticaNeueCyr;
     }
 }
-.nav-tabs{
-  display: flex;
-  flex-wrap:wrap;
-  flex-direction: row;
-  width: 100%;
-  position: relative;
-  float: left;
-  .menu__item{
-    flex: 1 0 0;
-    position: relative;
-    float: left;
-    a{
-      text-align: center;
-    }
-  }
-}
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-  color: white;
-  font-family: HelveticaNeueCyr;
-  font-weight: 400;
-  background-image: linear-gradient(176deg, #222 0%, #000001 100%);
-  cursor: default;
-  border:none;
-}
-.nav-tabs > li > a {
-  border-radius: 0;
-  border:none;
-  margin:0;
-}
-.tab-content{
-  display: block;
-  position: relative;
-  float: left;
-  width: 100%;
-}
+
 

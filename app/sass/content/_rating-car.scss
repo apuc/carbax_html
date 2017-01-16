@@ -1,0 +1,224 @@
+.title-rating{
+  display: block;
+  position: relative;
+  float: left;
+  width: calc(45% - 34px);
+  box-sizing: border-box;
+  margin-left:34px;
+  margin-top:50px;
+  color: #272727;
+  font-family: $cr;
+  font-size: 30px;
+  font-weight: 400;
+  img{
+    width: 80px;
+    height: 80px;
+    margin-left:15px;
+  }
+}
+.rating-private-car{
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  margin:20px 0;
+  .markka,.model{
+    display: block;
+    position: relative;
+    float: left;
+    width: 40%;
+    box-sizing: border-box;
+    h3{
+      width: 55%;
+      height: 22px;
+      font-family: $cr;
+      font-size: 24px;
+      color: #272727;
+      position: relative;
+      display: block;
+      position: relative;
+      float: left;
+      span{
+        color: #f72405;
+        margin-left:10px;
+      }
+    }
+    .speed{
+      position: relative;
+      display: block;
+      float: left;
+      width: 60px;
+      top: 7px;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 35px;
+      }
+    }
+
+  }
+  .model{
+    .speed{
+      margin-left:20px;
+    }
+  }
+}
+.buttons-rating{
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom:30px;
+  .compare,.add-comment,.look-sale{
+    display: block;
+    position: relative;
+    float: left;
+    width: calc(33% - 20px);
+    border-radius: 6px;
+    color: white;
+    text-align: center;
+    padding-top:6px;
+    font-size: 16px;
+    height: 34px;
+    font-weight: 400;
+    font-family:$cr;
+    box-sizing: border-box;
+  }
+  .compare{
+    background-color: #4c4b4b;
+    box-shadow: 0px 1px 2px 0px #363636;
+  }
+  .add-comment{
+    background-color: #f96400;
+    box-shadow: 0px 1px 2px 0px #d65702;
+    margin:0 30px;
+  }
+  .look-sale{
+    background-color: #bebdbd;
+    box-shadow: 0px 1px 2px 0px #737272;
+    color: #282828;
+  }
+}
+.perfomance-table{
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  margin:25px 0 15px;
+  .table-striped > tbody > tr:nth-of-type(odd){
+    background-color: #ddd;
+  }
+  .table-striped > tbody > tr{
+    background-color: #bebdbd;
+  }
+  .table > tbody > tr > td{
+    color: #272727;
+    font-family: $cr;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+}
+.mark-rat{
+  font-weight:bold;
+}
+.red-val{
+  color: #f72405;
+  margin-right:12px;
+  font-weight:700;
+}
+.rat-val{
+  margin-right:13px;
+  font-weight:700;
+}
+.speed-td{
+  position: relative;
+  top:-3px;
+  img{
+    width: 22px;
+    height: 14px;
+  }
+}
+.questions-about-car{
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom:34px;
+  &__items{
+    list-style-type: decimal;
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    li{
+      font-family:$cr;
+      color: #272727;
+      font-weight: 400;
+      margin-bottom:24px;
+      font-size:16px;
+      .btn-yes{
+        display: inline-block;
+        position: relative;
+        width: 84px;
+        height: 27px;
+        background-color: #05a42e;
+        border-radius: 6px;
+        box-shadow: 0px 1px 2px 0px #028524;
+        margin-left:10px;
+        text-transform: uppercase;
+        padding-top:2px;
+        color: white;
+        text-align: center;
+      }
+      .btn-no{
+        width: 84px;
+        height: 27px;
+        text-align: center;
+        background-color: #ef0000;
+        border-radius: 6px;
+        color: white;
+        display: inline-block;
+        box-shadow: 0px 1px 2px 0px #b60303;
+        margin-left:10px;
+        text-transform: uppercase;
+        padding-top:2px;
+      }
+    }
+
+  }
+  .good-option,.bad-option{
+    font-style: italic;
+    text-transform: uppercase;
+    font-size:16px;
+    font-weight:700;
+    span{
+      color: #272727;
+      margin-left:7px;
+    }
+  }
+  .good-option{
+    color: #05a42e;
+  }
+  .bad-option{
+    color: #ef0000;
+  }
+
+}
+.rating-tabs{
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  .nav-tabs > li > a{
+    font-family:$cr;
+    font-weight:400;
+    font-size:16px;
+  }
+}
