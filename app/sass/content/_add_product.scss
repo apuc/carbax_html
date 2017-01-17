@@ -4,37 +4,7 @@
   float: left;
   width: 100%;
   box-sizing: border-box;
-  .header-product{
-    display: block;
-    position: relative;
-    float: left;
-    width: 100%;
-    box-sizing: border-box;
-    background: #ff6b00;
-    h2{
-      font-family:$cb;
-      font-size:24px;
-      margin:30px 0;
-      width: calc(100% - 174px);
-      float: left;
-      position: relative;
-    }
-    .btn-car-selection{
-      float: left;
-      position: relative;
-      display: block;
-      min-width: 174px;
-      height: 31px;
-      background-color: #272727;
-      border-radius: 16px;
-      color: white;
-      font-family: $cr;
-      font-size: 14px;
-      line-height: 29px;
-      border: none;
-      margin:26px 0;
-    }
-  }
+
   form{
     display: block;
     position: relative;
@@ -91,8 +61,8 @@
           color: #424242;
           position: relative;
         }
-        input[type="text"]:last-of-type{
-          width: 60%;
+        .category-input{
+          width: 60% !important;
         }
         .btn-category{
           width: 25%;
@@ -275,8 +245,42 @@
 
 
 }
-
-
+.header-product{
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  background: #ff6b00;
+  h2{
+    font-family:$cb;
+    font-size:24px;
+    margin:30px 0;
+    width: calc(100% - 174px);
+    float: left;
+    position: relative;
+  }
+  .btn-car-selection{
+    float: left;
+    position: relative;
+    display: block;
+    min-width: 174px;
+    height: 31px;
+    text-align: center;
+    background-color: #272727;
+    border-radius: 16px;
+    color: white;
+    font-family: $cr;
+    font-size: 14px;
+    line-height: 29px;
+    border: none;
+    margin:26px 0;
+  }
+}
+.btn-float{
+  float: left;
+  cursor: pointer;
+}
 #modal_form {
   width: 600px;
   height: 250px;
