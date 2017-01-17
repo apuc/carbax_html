@@ -53,7 +53,8 @@
       img {
         object-fit: cover;
         width: 100%;
-        height: 35px;
+        height: 34px;
+        top: 7px;
       }
     }
 
@@ -107,7 +108,7 @@
   float: left;
   width: 100%;
   box-sizing: border-box;
-  margin:25px 0 15px;
+  margin:15px 0 15px;
   .table-striped > tbody > tr:nth-of-type(odd){
     background-color: #ddd;
   }
@@ -220,5 +221,17 @@
     font-family:$cr;
     font-weight:400;
     font-size:16px;
+    color: #272727;
+  }
+  .nav-tabs > li.active > a{
+    color: #555555;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-bottom-color: transparent;
+    font-family:$cr;
+    border-radius:4px 4px 0 0;
+    font-weight:700;
+    font-size: 16px;
+    color: #f96400;
   }
 }
