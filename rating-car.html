@@ -293,10 +293,17 @@
 
             <div class="rating-tabs">
                 <div class="container">
-                    <ul class="nav nav-tabs">
-                        <li><a href="#">Диаграмма</a></li>
-                        <li><a href="#">Отзывы</a></li>
+                    <!-- Nav Tab panes -->
+                    <ul class="nav nav-tabs" id="rating-tab">
+                        <li class="active"><a href="#diagram" data-toggle="tab">Диаграмма</a></li>
+                        <li><a href="#allComents" data-toggle="tab">Отзывы</a></li>
                     </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="diagram">Диаграмма</div>
+                        <div class="tab-pane fade" id="allComents">Отзывы</div>
+                    </div>
                 </div>
             </div>
 

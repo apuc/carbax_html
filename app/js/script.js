@@ -1,5 +1,10 @@
 $(document).ready(function () {
 
+    $('#rating-tab a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    });
+
     /*$('.btn-filtr').click(function(){
         $(".search-filters").slideToggle('fast');
         return false;
