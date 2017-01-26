@@ -22,42 +22,50 @@
                         <div class="filling">
                             <h2>Общая информация</h2>
                             <div class="info">
-                                <label for="title">Заголовок<span class="zirka"><sup>*</sup></span></label>
-                                <input type="text" id="title" placeholder="Легковой, грузовой...">
-                                <div class="help-title">
-                                    <span></span>
-                                    <p>Хотите чтобы нашли именно Ваш автомобиль?
-                                    Опишите его подробнее.
-                                    </p>
+                                <div class="obertka-error">
+                                    <label for="title">Заголовок<span class="zirka"><sup>*</sup></span></label>
+                                    <input type="text" id="title" placeholder="Легковой, грузовой...">
+                                    <div class="help">
+                                        <span></span>
+                                        <p>Хотите чтобы нашли именно Ваш автомобиль?
+                                            Опишите его подробнее.
+                                        </p>
+                                    </div>
                                 </div>
-
+                                
                                 <label for="category">Категория<span class="zirka"><sup>*</sup></span></label>
                                 <input type="text" id="category" readonly class="category-input">
                                 <span class="btn-category" id="go">Выбрать категорию</span>
 
+                                
                             </div>
 
                             <h2>Фотографии</h2>
                             <div class="photo">
-                                <label for="category">Загрузите фото<span class="zirka"><sup>*</sup></span></label>
-                                <input id="file-0a" class="file" type="file" multiple data-min-file-count="1">
-                            </div>
-                            <div class="help-photo">
-                                <span></span>
-                                <p>Добавьте фото своего авто
-                                </p>
+                                <div class="obertka-error">
+                                    <label for="category">Загрузите фото<span class="zirka"><sup>*</sup></span></label>
+                                    <input id="file-0a" class="file" type="file" multiple data-min-file-count="1">
+                                    <div class="help">
+                                        <span></span>
+                                        <p>Добавьте фото своего авто
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
 
 
                             <h2>Описание</h2>
                             <div class="descr">
-                                <label for="descr">Описание<span class="zirka"><sup>*</sup></span></label>
-                                <textarea id="descr"></textarea>
-                            </div>
-                            <div class="help-descr">
-                                <span></span>
-                                <p>Напишите подробнее, почему люди должн купить Ваш автомобиль
-                                </p>
+                                <div class="obertka-error">
+                                    <label for="descr">Описание<span class="zirka"><sup>*</sup></span></label>
+                                    <textarea id="descr"></textarea>
+                                    <div class="help">
+                                        <span></span>
+                                        <p>Напишите подробнее, почему люди должн купить Ваш автомобиль
+                                        </p>
+                                    </div>
+                                </div>
+
                             </div>
 
 
@@ -65,23 +73,28 @@
                             <div class="contacts">
                                 <label for="name">Имя<span class="zirka"><sup>*</sup></span></label>
                                 <input type="text" id="name">
-                                <label for="number">Номер телефона<span class="zirka"><sup>*</sup></span></label>
-                                <input type="text" id="number">
+                                <div class="obertka-error">
+                                    <label for="number">Номер телефона<span class="zirka"><sup>*</sup></span></label>
+                                    <input type="text" id="number">
+                                    <div class="help">
+                                        <span></span>
+                                        <p>Вдруг  Ваш телефон будет недоступен? Укажите несколько контактных данных
+                                        </p>
+                                    </div>
+                                </div>
                                 <span  class="btn_orange big_btn btn-float">+</span>
                                 <label for="soc">Социальная сеть<span class="zirka"><sup>*</sup></span></label>
                                 <input type="text" id="soc" placeholder="Введите ссылку на Вашу страницу">
-                                <label for="address">Адрес<span class="zirka"><sup>*</sup></span></label>
-                                <input type="text" id="address">
-                            </div>
-                            <div class="help-phone">
-                                <span></span>
-                                <p>Вдруг  Ваш телефон будет недоступен? Укажите несколько контактных данных
-                                </p>
-                            </div>
-                            <div class="help-address">
-                                <span></span>
-                                <p>Адрес поможет соорентироваться покупателю
-                                </p>
+                                <div class="obertka-error">
+                                    <label for="address">Адрес<span class="zirka"><sup>*</sup></span></label>
+                                    <input type="text" id="address">
+                                    <div class="help">
+                                        <span></span>
+                                        <p>Адрес поможет соорентироваться покупателю
+                                        </p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                         <div class="business-map__container">

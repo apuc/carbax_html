@@ -1,5 +1,30 @@
 $(document).ready(function () {
 
+    /* Сортировка отзывов*/
+    var selectSortItems = document.querySelectorAll('#ch-sort-list li');
+    var selectSortLabel = document.querySelector('#sort-by span:first-child');
+    for(var i=0; i<selectSortItems.length; i++){
+        var li = selectSortItems.item(i);
+        li.onclick = function(){
+            var selectSortCurrent = document.querySelector('#ch-sort-list li.ch-sort-list-active');
+            selectSortCurrent.removeAttribute('class');
+            selectSortLabel.innerHTML = this.innerHTML;
+            this.className = 'ch-sort-list-active';
+        }
+    };
+    var selectSortItems2 = document.querySelectorAll('#ch-sort-list2 li');
+    var selectSortLabel2 = document.querySelector('#sort-by2 span:first-child');
+    for(var i=0; i<selectSortItems2.length; i++){
+        var li = selectSortItems2.item(i);
+        li.onclick = function(){
+            var selectSortCurrent2 = document.querySelector('#ch-sort-list2 li.ch-sort-list-active2');
+            selectSortCurrent2.removeAttribute('class');
+            selectSortLabel2.innerHTML = this.innerHTML;
+            this.className = 'ch-sort-list-active2';
+        }
+    };
+    /* конец Сортировка отзывов*/
+
     $('#rating-tab a').click(function (e) {
         e.preventDefault();
         $(this).tab('show');
@@ -356,4 +381,35 @@ $(document).ready(function(){
 
 
 
+});
+
+$(document).ready(function () {
+    /*Диаграмма рейтинга машины*/
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+            ['Task', 'Hours per Day'],
+            ['Кондиционирование',9],
+            ['Трансмиссия',9],
+            ['Кондиционирование', 9],
+            ['Кондиционирование TV',9],
+            ['Кондиционирование',9],
+            ['Кондиционирование',9],
+            ['Трансмиссия',9],
+            ['Кондиционирование', 9],
+            ['Трансмиссия',9],
+            ['Трансмиссия',9]
+        ]);
+
+        /*var options = {
+            title: 'My Daily Activities'
+        };*/
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data);
+    }
+/* close Диаграмма рейтинга машины*/
 });

@@ -235,3 +235,244 @@
     color: #f96400;
   }
 }
+.tab-items{
+  display: block;
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.tab-item-comment{
+  display: block;
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #959595;
+  border-top: none;
+  &__left{
+    display: block;
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    border-right: 1px solid #959595;
+    background: #e8e8e8;
+    padding:27px 30px;
+    text-align: center;
+    h4{
+      font-family:$cb;
+      font-size:16px;
+      color: #282828;
+      margin:0;
+      margin-bottom:10px;
+    }
+    .comment-ava{
+      display: inline-block;
+      position: relative;
+      float: none;
+      box-sizing: border-box;
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+      background-color: #6b6b6b;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  &__right{
+    display: block;
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    width: calc(100% - 200px);
+    padding:15px 20px 10px 20px;
+    p{
+      font-size:12px;
+      line-height:1em;
+      display: block;
+      float: left;
+      position: relative;
+      margin-bottom:7px;
+    }
+    h3{
+      margin:0;
+      margin-bottom:12px;
+    }
+    .half-rating-private-car {
+      .rating-private-car{
+        width: 100%;
+        .markka,.model{
+          h3{
+            font-size:12px;
+            margin:0;
+            width: 56%;
+          }
+          .speed{
+            top:-12px;
+          }
+        }
+      }
+    }
+    .info-comment{
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: 15px;
+      a{
+        display: block;
+        position: relative;
+        float: left;
+        font-family:$cr;
+        color: #272727;
+        font-size:12px;
+      }
+      .read-comment{
+        width: 20%;
+        text-decoration: underline;
+        font-family: $cb;
+      }
+      .count-comments{
+        widows:25%;
+      }
+      .date-post{
+        float: right;
+        width: 30%;
+        font-size:12px;
+        font-weight:700;
+        margin:0;
+        text-align: right;
+        font-style: italic;
+        span{
+          font-weight:400;
+        }
+      }
+    }
+  }
+
+}
+.tab-item-comment:first-of-type{
+  border-top: 1px solid #959595;
+}
+.filters-comments{
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  margin: 15px 0;
+}
+
+
+/* Соритровка по популярности и дате (начало)*/
+.popular,.byDate{
+  position: relative;
+  display: block;
+  float: right;
+  box-sizing: border-box;
+  width: 137px;
+  height: 24px;
+}
+.byDate{
+  width: 94px !important;
+  margin-right: 20px;
+}
+.popular input[type=checkbox],.byDate input[type=checkbox]{
+  display: none;
+}
+.popular #sort-by,.byDate #sort-by2{
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  float: left;
+  height: 100%;
+  background-color: #e8e8e8;
+  border-radius: 12px;
+  text-align: center;
+  color: #282828;
+  font-family:$cr;
+  font-size: 12px;
+  padding-top: 4px;
+}
+.popular ul,.byDate ul{
+  width: 90%;
+  margin: 0;
+  padding:0;
+  display: none;
+  position: absolute;
+  top: 23px;
+  right: 6px;
+  box-sizing: border-box;
+  background-color: #e8e8e8;
+  list-style: none;
+  z-index: 999;
+}
+.byDate ul{
+  right: 4px;
+}
+.popular ul li,.byDate ul li{
+  cursor: pointer;
+  height: 24px;
+  box-sizing: border-box;
+  font-size: 12px;
+  padding: 3px;
+  border-top: 1px solid #e2e2e2;
+}
+.popular ul li:hover,.byDate ul li:hover{
+}
+.popular ul .ch-sort-list-active,.byDate ul .ch-sort-list-active2{
+  display: none;
+}
+.popular input[type=checkbox]:checked+label>ul,.byDate input[type=checkbox]:checked+label>ul{
+  display: block;
+}
+/* (конец) */
+
+/*пагинация*/
+.block-paginator{
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  text-align: center;
+  .pagination {
+    padding: 20px;
+  }
+  .pagination ul {
+    text-align: center;
+  }
+  .pagination ul li {
+    display: inline-block;
+    margin: 0 1px;
+    vertical-align: middle;
+    line-height: 12px;
+    padding: 2px 6px;
+  }
+  .pagination ul li a, .pagination ul li span {
+    color: #282828;
+    font-size:18px;
+  }
+  .pagination ul li a:hover, .pagination ul li span:hover {
+    background: #f5f5f5;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+  }
+  .pagination ul li a.prev, .pagination ul li a.next {
+    font-weight: bold;
+  }
+  .pagination ul li.active a, .pagination ul li.active span {
+    color: #2d4c80;
+    font-size: 21px;
+    font-weight: bold;
+  }
+  .pagination ul li.active a:hover, .pagination ul li.active span:hover {
+    background: none;
+  }
+}
+/* close пагинация*/

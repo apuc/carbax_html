@@ -139,23 +139,24 @@
   .date-coment,.all-coments{
     font-weight:400;
   }
-  .content-coment{
-    display: block;
-    position: relative;
-    float: left;
-    width: 100%;
-    box-sizing: border-box;
-    font-family:$cr;
+
+}
+.content-coment{
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  font-family:$cr;
+  font-size:16px;
+  font-weight:400;
+  color: #272727;
+  h3{
+    font-family:$cb;
     font-size:16px;
-    font-weight:400;
-    color: #272727;
-    h3{
-      font-family:$cb;
-      font-size:16px;
-      text-transform: uppercase;
-    }
-    strong{
-      font-style: italic;
-    }
+    text-transform: uppercase;
+  }
+  strong{
+    font-style: italic;
   }
 }
