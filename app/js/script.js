@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+
     /* Сортировка отзывов*/
     var selectSortItems = document.querySelectorAll('#ch-sort-list li');
     var selectSortLabel = document.querySelector('#sort-by span:first-child');
@@ -24,6 +25,7 @@ $(document).ready(function () {
         }
     };
     /* конец Сортировка отзывов*/
+
 
     $('#rating-tab a').click(function (e) {
         e.preventDefault();
@@ -412,4 +414,17 @@ $(document).ready(function () {
         chart.draw(data);
     }
 /* close Диаграмма рейтинга машины*/
+
+
+    /* Измение цвета ячейки рейтинга в таблице*/
+    // Получаем значение из ячейки
+    $('td span.rat-val').each(function(){
+        var x = $(this).text();
+        if (x < 3) {
+            $(this).css({color: '#f72405'});
+        }else{
+            $(this).css({color:'#05a42e'});
+        }
+    });
+    /* CLOSE  Измение цвета ячейки рейтинга в таблице*/
 });

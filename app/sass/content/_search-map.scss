@@ -154,6 +154,20 @@
         box-sizing: border-box;
         padding: 10px 0;
         border-bottom: 1px solid #e8e8e8;
+        label > input{ /* HIDE RADIO */
+          visibility: hidden; /* Makes input not-clickable */
+          position: absolute; /* Remove input from document flow */
+        }
+        label > input + img{ /* IMAGE STYLES */
+          cursor:pointer;
+          border:2px solid transparent;
+          background-color: #000001;
+        }
+        label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+          border:2px solid green;
+          border-radius:50%;
+          background-color: rgba(40, 237, 76, .8);
+        }
         .icon{
           display: block;
           position: relative;
@@ -245,14 +259,14 @@
     }
     .search-filters{
       position: absolute;
-      top: 150px;
-      left: 285px;
+      top: 59px;
+      left: 283px;
       display: none;
       box-sizing: border-box;
       width: 280px;
       background-color: #fff;
       overflow-y: scroll;
-      height: 506px;
+      height: 503px;
       /* Let's get this party started */
       &::-webkit-scrollbar {
         width: 0.3em;
@@ -373,6 +387,23 @@
             line-height: 15px;
           }
         }
+      }
+      .head-filtr{
+        width: 100%;
+        display: block;
+        position: relative;
+        float: left;
+        box-sizing: border-box;
+        background-color: #ff6b00;
+        padding:13px 15px;
+        height:48px;
+        h3{
+          color: #fffcf4;
+          font-size:18px;
+          margin:0;
+          font-family: $cb;
+        }
+
       }
     }
   }
