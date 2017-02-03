@@ -32,6 +32,11 @@ $(document).ready(function () {
         $(this).tab('show');
     });
 
+    $('#reviewsTab a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    });
+
     /*$('.btn-filtr').click(function(){
         $(".search-filters").slideToggle('fast');
         return false;
