@@ -32,8 +32,8 @@
     "yargs": "^6.3.0"
   },
   "devDependencies": {
-    "autoprefixer": "^6.6.1",
-    "browser-sync": "^2.18.5",
+    "autoprefixer": "^6.7.2",
+    "browser-sync": "^2.18.7",
     "cssnano": "^3.10.0",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
@@ -42,10 +42,10 @@
     "gulp-html-extend": "^1.1.6",
     "gulp-imagemin": "^3.1.1",
     "gulp-plumber": "^1.1.0",
-    "gulp-postcss": "^6.2.0",
+    "gulp-postcss": "^6.3.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
-    "gulp-sourcemaps": "^2.2.1",
+    "gulp-sourcemaps": "^2.4.1",
     "gulp-uglifyjs": "^0.6.2",
     "imagemin-pngquant": "^5.0.0",
     "postcss-assets": "^4.1.0",
