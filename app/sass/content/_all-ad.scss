@@ -10,6 +10,7 @@
       }
     }
   }
+
 }
 .all-ad__button-panel{
   width: 100%;
@@ -58,4 +59,102 @@
       float: none;
     }
   }
+}
+
+
+.cabinet__dark{
+  margin: 20px 0;
+  .cabinet__box--head-dark{
+    h3{
+      b{
+        color: #ff6b00;
+      }
+    }
+  }
+}
+
+
+.all-ad__vip-wrap{
+  width: 100%;
+  float: left;
+  position: relative;
+  .item{
+    width: 18%;
+    margin-right: 40px;
+    float: left;
+    position: relative;
+    &:last-of-type{
+      margin-right: 0;
+    }
+    .triangle{
+      width: 0;
+    	height: 0;
+    	border-top: 45px solid #ff6b00;
+    	border-right: 45px solid transparent;
+      position: absolute;
+      top: 0;
+      left: 0;
+      b{
+        color: #fff;
+        transform: rotate(-45deg);
+        font-family: $cr;
+        display: block;
+        position: absolute;
+        margin-top: -40px;
+        left: 5px;
+      }
+    }
+    .thumb{
+      height: 125px;
+      background-color: #bababa;
+      width: 100%;
+      float: left;
+      display: block;
+      overflow: hidden;
+      img{
+        size: 100%;
+        object-fit: cover;
+      }
+    }
+    h4{
+      margin: 5px 0;
+      width: 100%;
+      float: left;
+      color: #272727;
+      font-size: 16px;
+      font-family: $cb;
+      line-height: 17px;
+      text-align: left;
+    }
+    .price{
+      color: #ff6b00;
+      font-size: 20px;
+      font-family: $cb;
+      display: inline-block;
+      text-align: left;
+      float: left;
+    }
+    .city{
+      float: left;
+      width: 100%;
+      position: relative;
+      color: #282828;
+      font-size: 12px;
+      font-family: $cr;
+    }
+  }
+}
+
+.rubl-icon{
+  width: 14px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  margin-left: 5px;
+  svg{
+    size: 100%;
+    fill: #ff6b00;
+  }
+
 }
