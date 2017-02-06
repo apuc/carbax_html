@@ -28,16 +28,39 @@
     position: relative;
     float: left;
     color: #272727;
+    padding: 0;
     font-family: $calibri;
     font-size: 14px;
     margin: 20px 0px;
-    &--link {
-      color: #272727;
-      margin-right: 5px;
+    width: 100%;
+    li{
+      float: left;
+      list-style-type: none;
+      a{
+        color: #272727;
+        margin-right: 5px;
+        &:after{
+          content: "/";
+          color: #272727;
+          display: inline-block;
+          margin-left: 5px;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      &:last-of-type{
+        a{
+          &:after{
+            display: none;
+          }
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
     }
-    &--link:hover {
-      text-decoration: underline;
-    }
+
     &--counter {
       color: #d0d0d0;
       font-weight: 700;

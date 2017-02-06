@@ -240,7 +240,7 @@ $(document).ready(function () {
             $(this).removeClass('not_error').addClass('error');// Иначе, мы удаляем класс not-error и заменяем его на класс error
         }
     });
-    
+
     $('#part').unbind().blur( function(){//валидация поля формы с буквами и пробелами
 
         var val = $(this).val();// Для удобства записываем значение атрибута каждого поля в переменные
@@ -255,7 +255,7 @@ $(document).ready(function () {
             $(this).removeClass('not_error').addClass('error');// Иначе, мы удаляем класс not-error и заменяем его на класс error
         }
     });
-    
+
     $('#part-number').unbind().blur( function(){//валидация поля формы с буквами и пробелами
 
         var val = $(this).val();// Для удобства записываем значение атрибута каждого поля в переменные
@@ -314,7 +314,7 @@ $(document).ready(function () {
         {
             $(this).removeClass('not_error').addClass('error');// Иначе, мы удаляем класс not-error и заменяем его на класс error
         }
-    });    
+    });
     /*$('#date').unbind().blur( function(){//валидация поля формы с буквами и пробелами
 
         var val = $(this).val();// Для удобства записываем значение атрибута каждого поля в переменные
@@ -432,4 +432,23 @@ $(document).ready(function () {
         }
     });
     /* CLOSE  Измение цвета ячейки рейтинга в таблице*/
+
+    /*fancybox*/
+    $('.fancybox-thumb').fancybox({
+       prevEffect : 'fade',
+       nextEffect : 'fade',
+
+       closeBtn  : true,
+       arrows    : true,
+       nextClick : true,
+
+       helpers : {
+           thumbs : {
+               width  : 40,
+               height : 40
+
+           }
+       }
+   });
+    /*fancybox*/
 });
