@@ -55,10 +55,10 @@
 				background-color: #ff6b00;
 			}
 		}
-		.active{
-			color: #fff;
-			background-color: #ff6b00;
-		}
+		// .active  a{
+		// 	color: #fff!important;
+		// 	background-color: #ff6b00!important;
+		// }
 		.prev, .next{
 			display: inline-block;
 			position: relative;
@@ -80,4 +80,56 @@
 			background-image: url("../img/icons/right-arrow.png");
 		}
 	}
+}
+
+.pagination > .active > a{
+	color: #fff!important;
+	background-color: #ff6b00!important;
+}
+
+.pagination > li:first-child > a, .pagination > li:first-child > span{
+    position: relative;
+    float: left;
+    padding: 0;
+		background-image: url("../img/icons/left-arrow.png");
+		display: inline-block;
+		position: relative;
+		width: 5px;
+		height: 8px;
+		position: relative;
+		top: -9px;
+		margin-right: 10px;
+		background-repeat: no-repeat;
+		background-size: contain;
+    /* line-height: 1.42857143; */
+    /* color: #337ab7; */
+    /* text-decoration: none;
+    /* background-color: #fff; */
+    border: none;
+		&:hover{
+			background-color: #fff;
+		}
+}
+.pagination > li:last-child > a, .pagination > li:last-child > span{
+    position: relative;
+    float: left;
+    padding: 0;
+		background-image: url("../img/icons/right-arrow.png");
+		display: inline-block;
+		position: relative;
+		width: 5px;
+		height: 8px;
+		position: relative;
+		top: -9px;
+		margin-left: 10px;
+		background-repeat: no-repeat;
+		background-size: contain;
+    /* line-height: 1.42857143; */
+    /* color: #337ab7; */
+    /* text-decoration: none;
+    /* background-color: #fff; */
+    border: none;
+		&:hover{
+			background-color: #fff;
+		}
 }
