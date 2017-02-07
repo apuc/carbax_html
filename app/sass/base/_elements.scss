@@ -20,3 +20,63 @@
 		}
 	}
 }
+
+.pagination{
+	width: 100%;
+	float: left;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	li{
+		list-style-type: none;
+		display: inline-block;
+		// width: 27px;
+		// height: 27px;
+		&:hover{
+
+		}
+		a{
+			border: none;
+			padding: 0;
+			background-color: #fff;
+			// margin:0 5px;
+			font-size: 14px;
+			font-family: $cr;
+			line-height: 41px;
+			color: #272727;
+			width: 27px;
+			height: 27px;
+	    line-height: 28px;
+			border-radius: 2px;
+			&:hover{
+				color: #fff;
+				background-color: #ff6b00;
+			}
+		}
+		.active{
+			color: #fff;
+			background-color: #ff6b00;
+		}
+		.prev, .next{
+			display: inline-block;
+			position: relative;
+			width: 5px;
+			height: 8px;
+			position: relative;
+			top: -9px;
+			margin-right: 10px;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-image: url("../img/icons/left-arrow.png");
+			&:hover{
+				background-color: #fff;
+			}
+
+		}
+		.next{
+			margin-left: 10px;
+			background-image: url("../img/icons/right-arrow.png");
+		}
+	}
+}
