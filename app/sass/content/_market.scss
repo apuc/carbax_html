@@ -419,6 +419,26 @@
     position: relative;
     width: 45%;
     float: left;
+    .price{
+      width: 100%;
+      float: left;
+      position: relative;
+      text-align: center;
+      color: #f96400;
+      font-family: $cb;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 3px;
+      padding-bottom: 22px;
+      box-sizing: border-box;
+      .rubl-icon {
+        position: relative;
+        top: 3px;
+        display: inline-block;
+        width: 18px;
+        height: 25px;
+      }
+    }
     &--name {
       position: relative;
       display: block;
@@ -690,7 +710,7 @@
   &__box{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     position: relative;
     width: 100%;
     float: left;
@@ -700,6 +720,10 @@
       width: 19%;
       float: left;
       margin-bottom: 32px;
+      margin-right: 11px;
+      &:last-of-type{
+        margin-right: 0;
+      }
     }
     &--img{
       position: relative;
